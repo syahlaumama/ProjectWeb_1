@@ -27,9 +27,15 @@
 
     <style>
 
+      body {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+
       .Cardss {
-        background-color: white;
-        border-radius: 0 0 30px 0;
+        background-color: rgba(255, 255, 255, 0.619);
+        border-radius: 10px 10px 30px 10px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
       }
@@ -76,16 +82,16 @@
       }
 
       a.linktitle:hover {
-        text-decoration: underline;
+        text-decoration: none;
       }
 
       a.linktitle:active {
-        text-decoration: underline;
+        text-decoration: none;
       }
     </style>
 
 </head>
-<body style="background: linear-gradient(135deg, #72c0f465, #72c0f400); ">
+<body background="Background.png">
 
 <!--Navbar-->
   <nav style="background: linear-gradient(150deg, #657383, #72c0f4, #72c0f4, #657383);" class="navbar navbar-expand-lg navbar-dark shadow-lg pe-xl-5 sticky-top">
@@ -99,26 +105,32 @@
         </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 pe-xl-5">
-          <li class="nav-item">
-            <a style="color: white;" class="nav-link" aria-current="page" href="#">Trending</a>
-          </li>
           <li class="nav-item dropdown">
-            <a style="color: white;" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a style="color: white;" class="nav-link dropdown-toggle" href="Genres.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Genres
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Fiction</a></li>
-              <li><a class="dropdown-item" href="#">Horor</a></li>
-              <li><a class="dropdown-item" href="#">Fantasy</a></li>
-              <li><a class="dropdown-item" href="#">Romance</a></li>
+              <li><a class="dropdown-item" href="Fiction_Page.html">Fiction</a></li>
+              <li><a class="dropdown-item" href="Horor_Page.html">Horor</a></li>
+              <li><a class="dropdown-item" href="Fantasy_Page.html">Fantasy</a></li>
+              <li><a class="dropdown-item" href="Romance_Page.html">Romance</a></li>
             </ul>
           </li>
           <li class="nav-item">
             <a style="color: white;" class="nav-link" href="Membership.html">Membership</a>
           </li>
+          <li class="nav-item">
+            <a style="color: white;" class="nav-link" aria-current="page" href="#">Login</a>
+          </li>
         </ul>
-        <a href="login.html"><button type="button" class="btn btn-light"><i class="fa-solid fa-right-to-bracket"></i>
-          Login</button></a>
+    <!--Search Navbar-->  
+      <form class="example" action="/action_page.php" style="width: 60%;">
+        <input type="text" placeholder=" Search..." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+
+  <!--Search Navbar-->
+
       </div>
     </div>
   </nav>
@@ -133,672 +145,361 @@
 
 <!-- Container -->
 <div class="container">
-      <!--Caraousel-->
-
-    <!--Search Navbar-->  
-  <nav class="navbar navbar-expand-sm justify-content-center pt-3">
-    <form class="example" action="/action_page.php" style="width: 100%;">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </nav>
-<!--Search Navbar-->
-
-  <section>
-    <div class="row">
-      <div style="margin-top: 25px;" class="col-sm-12">
-        <div id="carouselExampleCaptions" class="carousel slide rounded-5 shadow-4-strong" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                      aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                      aria-label="Slide 3"></button>
-              </div>
-              <div class="carousel-inner rounded-5 shadow-3" style="box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);">
-                      <div class="carousel-item active"><a href="#">
-                          <img src="img/Halloween.png" class="d-block w-100 img-fluid h-75" data-bs-interval="10" alt="gambar">
-                          <div class="carousel-caption d-block h-50">
-                              </a>
-                          </div>
-                      </div>
-              
-                  <div class=" carousel-item"><a href="#">
-                          <img src="img/Halloween.png" class="d-block w-100 img-fluid" data-bs-interval="10" alt="gambar">
-                          <div class="carousel-caption d-block h-50">
-                              </a>
-                          </div>
-                      </div>
-                  <div class="carousel-item"><a href="#">
-                      <img src="img/Halloween.png" class="d-block w-100 img-fluid" data-bs-interval="10" alt="gambar">
-                      <div class="carousel-caption d-block h-50">
-                          </a>
-                      </div>
-                  </div>  
-              </div>
-
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-              </button>
-          </div>
-      </div>
-  </section>    
   <!--Caraousel-->
-  <br><br>
-
-
-  <div class="Cardss">
-      <!-- Trending Movies title-->
-      <section>
-        <div class="container p-3">
-          <div class="row text-center">
-            <div class="col-sm-12">
-              <br>
-              <h3 class="title">Trending Movies</h3>
-              <hr>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Trending Movies title-->
-
-      <!-- Trending Movies slider  -->
-      <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 px-5">
-              <!-- Swiper -->
-              <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><a href="action movie/topgunmaverick.html">
-                      <div class="card text-bg-dark">
-                        <img src="img/Horor/Scary Forest.png" class="card-img img-fluid" alt="...">
-                        <div class="card-img-overlay">                          
-                        </div>
-                      </div>
-                    </a>
-                    <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Scary Forest</h5></a>
-                  </div>
-                  <div class="swiper-slide"><a href="action movie/ironman3.html">
-                      <div class="card text-bg-dark">
-                        <img src="img/Fantasy/Fantasy and Horse Story.png" class="card-img img-fluid" alt="...">
-                        <div class="card-img-overlay">
-                        </div>
-                      </div>
-                    </a>
-                    <a href="" style="text-decoration: none;"><h5 class="text-center text-dark" >Fantasy and Horse Story</h5></a>
-                  </div>
-                    <div class="swiper-slide"><a href="action movie/ironman3.html">
-                      <div class="card text-bg-dark">
-                        <img src="img/Horor/The Grim Reaper.png" class="card-img img-fluid" alt="...">
-                        <div class="card-img-overlay">
-                        </div>
-                      </div>
-                    </a>
-                    <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">The Grim Reaper</h5></a>
-                  </div>
-                  <div class="swiper-slide"><a href="action movie/doctorstrange2.html">
-                      <div class="card text-bg-dark">
-                        <img src="img/Fiksi/Sosok Asing yang Raib.png" class="card-img img-fluid"
-                          alt="...">
-                        <div class="card-img-overlay">
-                        </div>
-                      </div>
-                    </a>
-                    <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Sosok Asing yang Raib</h5></a>
-                  </div>
-                  <div class="swiper-slide"><a href="action movie/avengersinfintywar.html">
-                      <div class="card text-bg-dark">
-                        <img src="img/Horor/Wooden Door.png"
-                          class="card-img img-fluid" alt="...">
-                        <div class="card-img-overlay">
-                        </div>
-                      </div>
-                    </a>
-                    <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Wooden Door</h5>
-                    </a>
-                  </div>
-                  <div class="swiper-slide"><a href="action movie/justiceleague.html">
-                      <div class="card text-bg-dark">
-                        <img src="img/Fantasy/Old Castle Mystery.png" class="card-img img-fluid" alt="...">
-                        <div class="card-img-overlay">
-                        </div>
-                      </div>
-                    </a>
-                    <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Old Castle Mystery</h5>
-                    </a>
-                  </div>
-                  <div class="swiper-slide"><a href="action movie/inception.html">
-                      <div class="card text-bg-dark">
-                        <img src="img/Fiksi/Digital World.png"
-                          class="card-img img-fluid" alt="...">
-                        <div class="card-img-overlay">
-                        </div>
-                      </div>
-                    </a>
-                    <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Digital World</h5>
-                    </a>
-                  </div>
-                  <div class="swiper-slide"><a href="action movie/whitehousedown.html">
-                      <div class="card text-bg-dark">
-                        <img src="img/Horor/Night Monster.png" class="card-img img-fluid" alt="...">
-                        <div class="card-img-overlay">
-                        </div>
-                      </div>
-                    </a>
-                    <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Night Monster</h5>
-                    </a>
-                  </div>
+    <section>
+      <div class="row">
+        <div style="margin-top: 25px;" class="col-sm-12">
+          <div id="carouselExampleCaptions" class="carousel slide rounded-5 shadow-4-strong" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="carousel-inner rounded-5 shadow-3" style="box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);">
+                        <div class="carousel-item active"><a href="#">
+                            <img src="img/Halloween.png" class="d-block w-100 img-fluid h-75" data-bs-interval="10" alt="gambar">
+                            <div class="carousel-caption d-block h-50">
+                                </a>
+                            </div>
+                        </div>
+                
+                    <div class=" carousel-item"><a href="#">
+                            <img src="img/Halloween.png" class="d-block w-100 img-fluid" data-bs-interval="10" alt="gambar">
+                            <div class="carousel-caption d-block h-50">
+                                </a>
+                            </div>
+                        </div>
+                    <div class="carousel-item"><a href="#">
+                        <img src="img/Halloween.png" class="d-block w-100 img-fluid" data-bs-interval="10" alt="gambar">
+                        <div class="carousel-caption d-block h-50">
+                            </a>
+                        </div>
+                    </div>  
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>    
+  <!--Caraousel-->
+    <br><br>
+
+
+    
+        <!-- Trending Movies title-->
+        <section>
+          <div class="container p-3">
+            <div class="row text-center">
+              <div class="col-sm-12">
+                <br>
+                <h1 class="title">Trending Stories</h1>
+                <hr>
               </div>
             </div>
-
-
-            <div class="col=sm-12 pt-4 pb-4 text-center">
-              <span class="title"><a href="action.html"><button class="btn btn-dark">See all</button></a></span>
-            </div>  
           </div>
-        </div>
-      </section>
-      <!-- Trending Movies slider  -->
-  </div>
+        </section>
+        <!-- Trending Movies title-->
+      
+        <!-- Trending Movies slider  -->
+      
+        <section>
+        <div class="Cardss">
+          <br>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 px-5">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="Horor_Page/ScaryForest.html">
+                        <div class="card text-bg-dark">
+                          <img src="img/Horor/Scary Forest.png" class="card-img img-fluid" alt="...">
+                          <div class="card-img-overlay">                          
+                          </div>
+                        </div>
+                      </a>
+                      <a href="Horor_Page/ScaryForest.html" style="text-decoration: none;"><h5 class="text-center text-dark">Scary Forest</h5></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Fantasy_Page/FantasyandHorseStory.html">
+                        <div class="card text-bg-dark">
+                          <img src="img/Fantasy/Fantasy and Horse Story.png" class="card-img img-fluid" alt="...">
+                          <div class="card-img-overlay">
+                          </div>
+                        </div>
+                      </a>
+                      <a href="" style="text-decoration: none;"><h5 class="text-center text-dark" >Fantasy and Horse Story</h5></a>
+                    </div>
+                      <div class="swiper-slide"><a href="Horor_Page/TheGrimReaper.html">
+                        <div class="card text-bg-dark">
+                          <img src="img/Horor/The Grim Reaper.png" class="card-img img-fluid" alt="...">
+                          <div class="card-img-overlay">
+                          </div>
+                        </div>
+                      </a>
+                      <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">The Grim Reaper</h5></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Fiction_Page/SosokAsingYangRaib.html">
+                        <div class="card text-bg-dark">
+                          <img src="img/Fiksi/Sosok Asing yang Raib.png" class="card-img img-fluid"
+                            alt="...">
+                          <div class="card-img-overlay">
+                          </div>
+                        </div>
+                      </a>
+                      <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Sosok Asing yang Raib</h5></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Horor_Page/WoodenDoor.html">
+                        <div class="card text-bg-dark">
+                          <img src="img/Horor/Wooden Door.png"
+                            class="card-img img-fluid" alt="...">
+                          <div class="card-img-overlay">
+                          </div>
+                        </div>
+                      </a>
+                      <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Wooden Door</h5>
+                      </a>
+                    </div>
+                    <div class="swiper-slide"><a href="Fantasy_Page/OldCastleMystery.html">
+                        <div class="card text-bg-dark">
+                          <img src="img/Fantasy/Old Castle Mystery.png" class="card-img img-fluid" alt="...">
+                          <div class="card-img-overlay">
+                          </div>
+                        </div>
+                      </a>
+                      <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Old Castle Mystery</h5>
+                      </a>
+                    </div>
+                    <div class="swiper-slide"><a href="Fiction_Page/DigitalWorld.html">
+                        <div class="card text-bg-dark">
+                          <img src="img/Fiksi/Digital World.png"
+                            class="card-img img-fluid" alt="...">
+                          <div class="card-img-overlay">
+                          </div>
+                        </div>
+                      </a>
+                      <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Digital World</h5>
+                      </a>
+                    </div>
+                    <div class="swiper-slide"><a href="Horor_Page/TheNightMonster.html">
+                        <div class="card text-bg-dark">
+                          <img src="img/Horor/Night Monster.png" class="card-img img-fluid" alt="...">
+                          <div class="card-img-overlay">
+                          </div>
+                        </div>
+                      </a>
+                      <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Night Monster</h5>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <br><br>
+              </div> 
+            </div>
+          </div>
+        </section>
+        <!-- Trending Movies slider  -->
 
-<br>
+    
+  <br>
 
-
-<div class="Cardss" >
-  <!-- Fantasy Movies title-->
+  <!-- Trending Movies title-->
   <section>
     <div class="container p-3">
       <div class="row text-center">
         <div class="col-sm-12">
           <br>
-          <h3 class="title">Fantasy Movies</h3>
+          <h1 class="title"><a href="Genres.html" class="linktitle" style="color: black;">Genres</a></h1>
           <hr>
         </div>
       </div>
     </div>
   </section>
-  <!-- Fantasy Movies title-->
+  <!-- Trending Movies title-->
 
-  <!-- Fantasy Movies slider  -->
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 px-5">
-          <!-- Swiper -->
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><a href="action movie/topgunmaverick.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Fantasy/Dream.png" class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">                          
+
+      <!-- Romance Title -->
+        <div class="row-sm-12">
+            <div class="card mb-3 p-3" style="border-radius: 15px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+              <!--Romance Genres-->  
+              <div class="row g-0 pt-3">
+                <div class="col-sm-4 p-3">
+                        <a href="Romance_Page.html" class="linktitle" style="color: black;">
+                            <div class="card rounded-5 p-3" style="background-color: pink;">
+                                <div class="card-body">
+                                <h2 class="card-title">Romance</h2>
+                                <h6 class="pb-5">/rōˈmans,ˈrōˌmans/</h6>
+                                <p class="card-text pt-5">A feeling of excitement and mystery associated with love</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Dream</h5></a>
-              </div>
-              <div class="swiper-slide"><a href="action movie/ironman3.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Fantasy/Fantasy and Horse Story.png" class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">
+                    <div class="col-sm-2">
+                        <a href=""><img src="img/Romance/Matahari Terbenam Roman.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                        <div class="row">
+                          <div class="col text-center">Matahari Terbenam <br>dengan Anita</div>
+                        </div>
                     </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark" >Fantasy and Horse Story</h5></a>
-              </div>
-                <div class="swiper-slide"><a href="action movie/ironman3.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Fantasy/Modern Witch Club.png" class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">
+                    <div class="col-sm-2">
+                        <a href=""><img src="img/Romance/When We First Met.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                        <div class="row">
+                          <div class="col text-center">When We First <br>Met</div>
+                        </div>
                     </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Modern Witch Club</h5></a>
-              </div>
-              <div class="swiper-slide"><a href="action movie/doctorstrange2.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Fantasy/Mission.png" class="card-img img-fluid"
-                      alt="...">
-                    <div class="card-img-overlay">
+                    <div class="col-sm-2">
+                        <a href=""><img src="img/Romance/Childhood to Friends Lovers.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                        <div class="row">
+                          <div class="col text-center">Childhood to Friends <br>Lovers</div>
+                        </div>
                     </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Mission</h5></a>
-              </div>
-              <div class="swiper-slide"><a href="action movie/avengersinfintywar.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Fantasy/Old Boat.png"
-                      class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">
+                    <div class="col-sm-2">
+                        <a href=""><img src="img/Romance/The Latte Girl.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                        <div class="row">
+                          <div class="col text-center">The Latte Girl</div>
+                        </div>
                     </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Old Boat</h5>
-                </a>
-              </div>
-              <div class="swiper-slide"><a href="action movie/justiceleague.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Fantasy/Old Castle Mystery.png" class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">
+                </div>
+              <!--Romance Genres-->
+              
+              <!--Fantasy Genres-->  
+              <div class="row g-0 pt-3">
+                <div class="col-sm-4 p-3">
+                        <a href="Fantasy_Page.html" class="linktitle" style="color: black;">
+                            <div class="card rounded-5 p-3" style="background-color: lightblue;">
+                                <div class="card-body">
+                                <h2 class="card-title">Fantasy</h2>
+                                <h6 class="pb-5">/ˈfan(t)əsē/</h6>
+                                <p class="card-text pt-4">the faculty or activity of imagining things, especially things that are impossible or improbable.</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Old Castle Mystery</h5>
-                </a>
-              </div>
-              <div class="swiper-slide"><a href="action movie/inception.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Fantasy/The black Crow.png"
-                      class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">
+                    <div class="col-sm-2">
+                        <a href=""><img src="img/Fantasy/The Dragon Quest.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                        <div class="row">
+                          <div class="col text-center">The Dragon Quest</div>
+                        </div>
                     </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">The Black Crow</h5>
-                </a>
-              </div>
-              <div class="swiper-slide"><a href="action movie/whitehousedown.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Fantasy/The Dragon Quest.png" class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">
+                    <div class="col-sm-2">
+                        <a href=""><img src="img/Fantasy/Old Castle Mystery.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                        <div class="row">
+                          <div class="col text-center">Old Castle Mystery</div>
+                        </div>
                     </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">The Dragon Quest</h5>
-                </a>
-              </div>
+                    <div class="col-sm-2">
+                        <a href=""><img src="img/Fantasy/The South Witch.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                        <div class="row">
+                          <div class="col text-center">The South Witch</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href=""><img src="img/Fantasy/Fantasy and Horse Story.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                        <div class="row">
+                          <div class="col text-center">Fantasy and Horse Story</div>
+                        </div>
+                    </div>
+              <!--Fantasy Genres-->
+
+              <!--Romance Genres-->  
+              <div class="row g-0 pt-3">
+                <div class="col-sm-4 p-3">
+                    <a href="Romance_Page.html" class="linktitle" style="color: black;">
+                        <div class="card rounded-5 p-3" style="background-color: rgb(157, 68, 68);">
+                            <div class="card-body">
+                            <h2 class="card-title">Horor</h2>
+                            <h6 class="pb-5">/ˈhôrər/</h6>
+                            <p class="card-text pt-5">an intense feeling of fear, shock, or disgust.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-2">
+                    <a href=""><img src="img/Horor/Rufus Stewart.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                    <div class="row">
+                      <div class="col text-center">Rufus Stewart</div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <a href=""><img src="img/Horor/Night Monster.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                    <div class="row">
+                      <div class="col text-center">Night Monster</div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <a href=""><img src="img/Horor/Thread.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                    <div class="row">
+                      <div class="col text-center">Thread</div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <a href=""><img src="img/Horor/The Red House.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                    <div class="row">
+                      <div class="col text-center">The Red House</div>
+                    </div>
+                </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
-        </div>
+          <!--Romance Genres-->
 
-
-        <div class="col=sm-12 pt-4 pb-4 text-center">
-          <span class="title"><a href="action.html"><button class="btn btn-dark">See all</button></a></span>
-        </div>  
-      </div>
-    </div>
-  </section>
-  <!-- Fantasy Movies slider  -->
-</div>
-
-<br>
-
-<div class="Cardss">
-  <!-- Fiction Movies title-->
-  <section>
-    <div class="container p-3">
-      <div class="row text-center">
-        <div class="col-sm-12">
-          <br>
-          <h3 class="title">Fiction Movies</h3>
-          <hr>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Fiction Movies title-->
-
-  <!-- Fiction Movies slider  -->
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 px-5">
-          <!-- Swiper -->
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><a href="action movie/topgunmaverick.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Fiksi/Abandoned Kingdom.png" class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">                          
+          <!--Fantasy Genres-->  
+            <div class="row g-0 pt-3">
+                <div class="col-sm-4 p-3">
+                    <a href="Fantasy_Page.html" class="linktitle" style="color: black;">
+                        <div class="card rounded-5 p-3" style="background-color: goldenrod;">
+                            <div class="card-body">
+                            <h2 class="card-title">Fiction</h2>
+                            <h6 class="pb-5">/ˈfikSH(ə)n/</h6>
+                            <p class="card-text pt-4">a belief or statement that is false, but that is often held to be true because it is expedient to do so.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-2">
+                    <a href=""><img src="img/Fiksi/Blood Moon.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                    <div class="row">
+                      <div class="col text-center">Blood Moon</div>
                     </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Abandoned Kingdom</h5></a>
-              </div>
-              <div class="swiper-slide"><a href="action movie/ironman3.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Fiksi/Bali.png" class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">
+                </div>
+                <div class="col-sm-2">
+                    <a href=""><img src="img/Fiksi/Rebellious Child.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                    <div class="row">
+                      <div class="col text-center">Rebellious Child</div>
                     </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark" >Bali</h5></a>
-              </div>
-                <div class="swiper-slide"><a href="action movie/ironman3.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Fiksi/Blood Moon.png" class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">
+                </div>
+                <div class="col-sm-2">
+                    <a href=""><img src="img/Fiksi/Fast Life.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                    <div class="row">
+                      <div class="col text-center">Fast Life</div>
                     </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Blood Moon</h5></a>
-              </div>
-              <div class="swiper-slide"><a href="action movie/doctorstrange2.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Fiksi/Digital World.png" class="card-img img-fluid"
-                      alt="...">
-                    <div class="card-img-overlay">
+                </div>
+                <div class="col-sm-2">
+                    <a href=""><img src="img/Fiksi/The Beasts of The Black Hole.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                    <div class="row">
+                      <div class="col text-center">The Beasts of The <br>Black Hole</div>
                     </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Digital World</h5></a>
-              </div>
-              <div class="swiper-slide"><a href="action movie/avengersinfintywar.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Fiksi/Fast Life.png"
-                      class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">
-                    </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Fast Life</h5>
-                </a>
-              </div>
-              <div class="swiper-slide"><a href="action movie/justiceleague.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Fiksi/Nefarious Games.png" class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">
-                    </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Nefarious Games</h5>
-                </a>
-              </div>
-              <div class="swiper-slide"><a href="action movie/inception.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Fiksi/Princess.png"
-                      class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">
-                    </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Princess</h5>
-                </a>
-              </div>
-              <div class="swiper-slide"><a href="action movie/whitehousedown.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Fiksi/Rebellious Child.png" class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">
-                    </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Rebellious Child</h5>
-                </a>
-              </div>
+                </div>
+          <!--Fantasy Genres-->    
+                </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
         </div>
-
-
-        <div class="col=sm-12 pt-4 pb-4 text-center">
-          <span class="title"><a href="action.html"><button class="btn btn-dark">See all</button></a></span>
-        </div>  
-      </div>
-    </div>
-  </section>
-  <!-- Fiction Movies slider  -->
+      </div>  
 </div>
 
-<br>
-
-<div class="Cardss">
-  <!-- Horor Movies title-->
-  <section>
-    <div class="container p-3">
-      <div class="row text-center">
-        <div class="col-sm-12">
-          <br>
-          <h3 class="title">Horor Movies</h3>
-          <hr>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Horor Movies title-->
-
-  <!-- Horor Movies slider  -->
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 px-5">
-          <!-- Swiper -->
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><a href="action movie/topgunmaverick.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Horor/Thread.png" class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">                          
-                    </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Thread</h5></a>
-              </div>
-              <div class="swiper-slide"><a href="action movie/ironman3.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Horor/Wooden Door.png" class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">
-                    </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark" >The Secret Wooden Door</h5></a>
-              </div>
-                <div class="swiper-slide"><a href="action movie/ironman3.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Horor/Lady Rose.png" class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">
-                    </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Lady Rose</h5></a>
-              </div>
-              <div class="swiper-slide"><a href="action movie/doctorstrange2.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Horor/Night Monster.png" class="card-img img-fluid"
-                      alt="...">
-                    <div class="card-img-overlay">
-                    </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Night Monster</h5></a>
-              </div>
-              <div class="swiper-slide"><a href="action movie/avengersinfintywar.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Horor/Rufus Stewart.png"
-                      class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">
-                    </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">The Lost Room</h5>
-                </a>
-              </div>
-              <div class="swiper-slide"><a href="action movie/justiceleague.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Horor/Scary Forest.png" class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">
-                    </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Scary Forest</h5>
-                </a>
-              </div>
-              <div class="swiper-slide"><a href="action movie/inception.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Horor/Witch.png"
-                      class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">
-                    </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Witch</h5>
-                </a>
-              </div>
-              <div class="swiper-slide"><a href="action movie/whitehousedown.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Horor/The Grim Reaper.png" class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">
-                    </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">The Grim Reaper</h5>
-                </a>
-              </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
-        </div>
-
-
-        <div class="col=sm-12 pt-4 pb-4 text-center">
-          <span class="title"><a href="action.html"><button class="btn btn-dark">See all</button></a></span>
-        </div>  
-      </div>
-    </div>
-  </section>
-  <!-- Horor Movies slider  -->
+  <br>
 </div>
 
-<br>
+  <br>
 
-<div class="Cardss">
-  <!-- Romance Movies title-->
-  <section>
-    <div class="container p-3">
-      <div class="row text-center">
-        <div class="col-sm-12">
-          <br>
-          <h3 class="title">Romance Movies</h3>
-          <hr>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Romance Movies title-->
-
-  <!-- Romance Movies slider  -->
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 px-5">
-          <!-- Swiper -->
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><a href="action movie/topgunmaverick.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Romance/before you go.png" class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">                          
-                    </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Before You Go</h5></a>
-              </div>
-              <div class="swiper-slide"><a href="action movie/ironman3.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Romance/Childhood to Friends Lovers.png" class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">
-                    </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark" >Childhood to Friends Lovers</h5></a>
-              </div>
-                <div class="swiper-slide"><a href="action movie/ironman3.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Romance/Kenangan tadi Malam.png" class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">
-                    </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Kenangan tadi Malam</h5></a>
-              </div>
-              <div class="swiper-slide"><a href="action movie/doctorstrange2.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Romance/Love at First Sight.png" class="card-img img-fluid"
-                      alt="...">
-                    <div class="card-img-overlay">
-                    </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Love at First Sight</h5></a>
-              </div>
-              <div class="swiper-slide"><a href="action movie/avengersinfintywar.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Romance/Love Story.png"
-                      class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">
-                    </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Love Story</h5>
-                </a>
-              </div>
-              <div class="swiper-slide"><a href="action movie/justiceleague.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Romance/Matahari Terbenam Roman.png" class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">
-                    </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Matahari Terbenam dengan Anita</h5>
-                </a>
-              </div>
-              <div class="swiper-slide"><a href="action movie/inception.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Romance/Strange Days.png"
-                      class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">
-                    </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Strange Days</h5>
-                </a>
-              </div>
-              <div class="swiper-slide"><a href="action movie/whitehousedown.html">
-                  <div class="card text-bg-dark">
-                    <img src="img/Romance/Stay With Me.png" class="card-img img-fluid" alt="...">
-                    <div class="card-img-overlay">
-                    </div>
-                  </div>
-                </a>
-                <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Stay With Me</h5>
-                </a>
-              </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
-        </div>
-
-
-        <div class="col=sm-12 pt-4 pb-4 text-center">
-          <span class="title"><a href="action.html"><button class="btn btn-dark">See all</button></a></span>
-        </div>  
-      </div>
-    </div>
-  </section>
-  <!-- Romance Movies slider  -->
-</div>
-
-<br>
-
-
-
-
-
-</div>
 <!-- Container -->
 
 <!-- Footer -->
@@ -822,10 +523,10 @@
             <a href="Page1.html" style="text-decoration: none; color: #fff">Home</a>
           </p>
           <p class="Judul2">
-            <a href="trendingbook.html" style="text-decoration: none; color:#fff">Trending Movies</a>
+            <a href="trendingbook.html" style="text-decoration: none; color:#fff">Trending Stories</a>
           </p>
           <p class="Judul2">
-            <a href="genres.html" style="text-decoration: none; color:#fff">Genres</a>
+            <a href="Genres.html" style="text-decoration: none; color:#fff">Genres</a>
           </p>
         </div>
 
