@@ -58,10 +58,16 @@
         clear: both;
         display: table;
       }
+
+      body {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
     </style>
 
 </head>
-<body style="background-color: whitesmoke;">
+<body background="Background.png">
 
 <!--Navbar-->
 <nav style="background: linear-gradient(150deg, #657383, #72c0f4, #72c0f4, #657383);" class="navbar navbar-expand-lg navbar-dark shadow-lg pe-xl-5 sticky-top">
@@ -76,7 +82,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0 pe-xl-5">
         <li class="nav-item">
-          <a style="color: white;" class="nav-link" aria-current="page" href="#">Treading</a>
+          <a style="color: white;" class="nav-link" aria-current="page" href="#">Trending</a>
         </li>
         <li class="nav-item dropdown">
           <a style="color: white;" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -100,21 +106,14 @@
 </nav>
 <!--Navbar-->
 
-<!--Search Navbar-->  
-  <nav class="navbar navbar-expand-sm justify-content-center" style="background-color: white;">
-    <form class="example" action="/action_page.php" style="width: 80%;">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </nav>
-<!--Search Navbar-->
+
 
 
 
 
 
 <!-- First Jumbotron -->
-    <div class="text-light" style="background: linear-gradient(135deg, #71b7e6, #657383);">
+    <div class="text-light" style="background: linear-gradient(135deg, #71b7e6b4, #657383);">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -134,7 +133,7 @@
 
 
 <!-- Second Jumbotron -->
-    <div class="text-dark text-center" style="background: linear-gradient(135deg, white, #71b7e65e);">
+    <div class="text-dark text-center p-3" style="background: linear-gradient(135deg, rgba(255, 255, 255, 0.662), #71b7e65e);">
         <div class="container">
             <br><br><br><br>
                 <div class="row">
@@ -161,7 +160,7 @@
 <!-- Second Jumbotron -->
 
 <!-- Third Jumbotron -->
-    <div class="text-dark" style="background: linear-gradient(135deg, whitesmoke, #6573834c);">
+    <div class="text-dark" style="background: linear-gradient(135deg, rgba(245, 245, 245, 0.819), #6573834c);">
         <div class="container">
                 <br><br><br><br>
                 <div class="row text-center">
@@ -171,14 +170,13 @@
                                     <div class="card p-5 border-info">
                                         <div class="card-body">
                                             <h3 class="card-title text-center">Membership</h3>
-                                            <h4 class="card-title text-center">From $1.99/month USD</h4>
+                                            <h4 class="card-title text-center">From 1.99 / month USD</h4>
                                             <br>
                                             <hr>
                                             <p class="card-text" style="font-size: 20px;text-align: left;"><i class="fa fa-check" aria-hidden="true"> Unlimited offline stories.</p></i>
-                                            <p class="card-text" style="font-size: 20px;text-align: left;"><i class="fa fa-check" aria-hidden="true"> No ad interruptions</p></i>
                                             <p class="card-text" style="font-size: 20px;text-align: left;"><i class="fa fa-check" aria-hidden="true"> Make your own Story</p></i>
                                             <p class="card-text" style="font-size: 20px;text-align: left;"><i class="fa fa-check" aria-hidden="true"> Unlock paid stories</p></i>
-                                            <br><br><br><br><br>
+                                            <br><br><br><br><br><br>
                                             <a href="#" class="btn btn-lg btn-primary rounded-5">Buy Membership</a>
                                             <br>
                                         </div>
@@ -189,15 +187,13 @@
                                     <div class="card p-5 border-info">
                                         <div class="card-body">
                                             <h3 class="card-title text-center">Membership +</h3>
-                                            <h4 class="card-title text-center">From $5.99/2 month USD</h4>
+                                            <h4 class="card-title text-center">From 5.99 / 1 month USD</h4>
                                             <br>
                                             <hr>
                                             <p class="card-text" style="font-size: 20px;text-align: left;"><i class="fa fa-check" aria-hidden="true"> Unlimited offline stories.</p></i>
                                             <p class="card-text" style="font-size: 20px;text-align: left;"><i class="fa fa-check" aria-hidden="true"> No ad interruptions</p></i>
-                                            <p class="card-text" style="font-size: 20px;text-align: left;"><i class="fa fa-check" aria-hidden="true"> Make your own Story</p></i>
-                                            <p class="card-text" style="font-size: 20px;text-align: left;"><i class="fa fa-check" aria-hidden="true"> 2 Membership+ accounts</p></i>
-                                            <p class="card-text" style="font-size: 20px;text-align: left;"><i class="fa fa-check" aria-hidden="true"> Unlock paid stories</p></i>
-                                            <br><br><br>
+                                            <p class="card-text" style="font-size: 20px;text-align: left;"><i class="fa fa-check" aria-hidden="true"> Make your own Story</p></i>                                            <p class="card-text" style="font-size: 20px;text-align: left;"><i class="fa fa-check" aria-hidden="true"> Unlock paid stories</p></i>
+                                            <br><br><br><br>
                                             <a href="#" class="btn btn-lg btn-primary rounded-5">Buy Membership</a>
                                             <br>
                                         </div>
@@ -205,24 +201,23 @@
                                 </div>
 
                                 <div class="col-sm-4">
-                                  <div class="card p-5 border-info">
+                                  <div class="card p-5 border-danger text-danger">
                                       <div class="card-body">
-                                          <h3 class="card-title text-center">Membership ++</h3>
-                                          <h4 class="card-title text-center">From $9.99/3 month USD</h4>
+                                          <h3 class="card-title text-center">Membership <small style="font-size: 13px;">Halloween Special</small></h3>
+                                          <h4 class="card-title text-center">From 2.99 / 1 month USD</h4>
                                           <br>
                                           <hr>
                                           <p class="card-text" style="font-size: 20px;text-align: left;"><i class="fa fa-check" aria-hidden="true"> Unlimited offline stories.</p></i>
                                           <p class="card-text" style="font-size: 20px;text-align: left;"><i class="fa fa-check" aria-hidden="true"> No ad interruptions</p></i>
                                           <p class="card-text" style="font-size: 20px;text-align: left;"><i class="fa fa-check" aria-hidden="true"> Make your own Story</p></i>
-                                          <p class="card-text" style="font-size: 20px;text-align: left;"><i class="fa fa-check" aria-hidden="true"> 2 Membership++ accounts</p></i>
                                           <p class="card-text" style="font-size: 20px;text-align: left;"><i class="fa fa-check" aria-hidden="true"> Unlock paid stories</p></i>
-                                          <p class="card-text" style="font-size: 20px;text-align: left;"><i class="fa fa-check" aria-hidden="true"> 1 month free first time purchase</p></i>
-
-                                          <br>
+                                          <br><br><br><br>
                                           <a href="#" class="btn btn-lg btn-primary rounded-5">Buy Membership</a>
                                       </div>
                                   </div>
                               </div>
+
+                              
                 </div>
                 <br><br><br><br>    
             </div>        
@@ -231,7 +226,7 @@
 
 <!-- Footer -->
 <section>
-  <footer style="background-color: #0e0d0d;" class="text-white pt-5 pb-4">
+  <footer style="background: linear-gradient(135deg, #0000009a,#657383, #657383, #0000009a);" class="text-white pt-5 pb-4 sticky-bottom">
     <div class="container text-center">
       <div class="row text-center">
         <div class="col-sm-3 mx-auto mt-3">

@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="asset/Search.css" />
+    <!-- Title -->
+    <title>Provitex - Read Online</title>
+    <!--link animate css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    
+    
+    
+
+    <style>
+
+      body {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+
+      .Cardss {
+        background-color: rgba(255, 255, 255, 0.619);
+        border-radius: 10px 10px 30px 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+      }
+
+      form.example input[type=text] {
+        padding: 5px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 80%;
+        background: #f1f1f1;
+        border-radius: 15px 0px 0px 15px;
+      }
+
+      form.example button {
+        float: left;
+        width: 20%;
+        padding: 5px;
+        background: #657383;
+        color: white;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        cursor: pointer;
+        border-radius: 0px 15px 15px 0px;
+      }
+
+      form.example button:hover {
+        background: black;
+      }
+
+      form.example::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      a.linktitle:link {
+        text-decoration: none;
+      }
+
+      a.linktitle:visited {
+        text-decoration: none;
+      }
+
+      a.linktitle:hover {
+        text-decoration: none;
+      }
+
+      a.linktitle:active {
+        text-decoration: none;
+      }
+    </style>
+
+</head>
+<body background="Background.png">
+
+<!--Navbar-->
+  <nav style="background: linear-gradient(150deg, #657383, #72c0f4, #72c0f4, #657383);" class="navbar navbar-expand-lg navbar-dark shadow-lg pe-xl-5 sticky-top">
+    <div class="container">
+          <a style="color: white; animation-duration: 10s;"
+          class="navbar-brand animate__animated animate__headShake animate__infinite" href="Page1.html">Provi<span
+            style="color: white;">Tex</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 pe-xl-5">
+          <li class="nav-item dropdown">
+            <a style="color: white;" class="nav-link dropdown-toggle" href="Genres.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Genres
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Fiction_Page.html">Fiction</a></li>
+              <li><a class="dropdown-item" href="Horor_Page.html">Horor</a></li>
+              <li><a class="dropdown-item" href="Fantasy_Page.html">Fantasy</a></li>
+              <li><a class="dropdown-item" href="Romance_Page.html">Romance</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a style="color: white;" class="nav-link" href="Membership.html">Membership</a>
+          </li>
+          <li class="nav-item">
+            <a style="color: white;" class="nav-link" aria-current="page" href="#">Login</a>
+          </li>
+        </ul>
+    <!--Search Navbar-->  
+      <form class="example" action="/action_page.php" style="width: 60%;">
+        <input type="text" placeholder=" Search..." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+
+  <!--Search Navbar-->
+
+      </div>
+    </div>
+  </nav>
+<!--Navbar-->
+
+
+
+
+
+
+
+
+<!-- Container -->
+<div class="container">
+  <!--Caraousel-->
+    <section>
+      <div class="row">
+        <div style="margin-top: 25px;" class="col-sm-12">
+          <div id="carouselExampleCaptions" class="carousel slide rounded-5 shadow-4-strong" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner rounded-5 shadow-3" style="box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);">
+                        <div class="carousel-item active"><a href="#">
+                            <img src="img/Halloween.png" class="d-block w-100 img-fluid h-75" data-bs-interval="10" alt="gambar">
+                            <div class="carousel-caption d-block h-50">
+                                </a>
+                            </div>
+                        </div>
+                
+                    <div class=" carousel-item"><a href="#">
+                            <img src="img/Halloween.png" class="d-block w-100 img-fluid" data-bs-interval="10" alt="gambar">
+                            <div class="carousel-caption d-block h-50">
+                                </a>
+                            </div>
+                        </div>
+                    <div class="carousel-item"><a href="#">
+                        <img src="img/Halloween.png" class="d-block w-100 img-fluid" data-bs-interval="10" alt="gambar">
+                        <div class="carousel-caption d-block h-50">
+                            </a>
+                        </div>
+                    </div>  
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>    
+  <!--Caraousel-->
+    <br><br>
+
+
+    
+        <!-- Trending Movies title-->
+        <section>
+          <div class="container p-3">
+            <div class="row text-center">
+              <div class="col-sm-12">
+                <br>
+                <h1 class="title">Trending Stories</h1>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Trending Movies title-->
+      
+        <!-- Trending Movies slider  -->
+      
+        <section>
+        <div class="Cardss">
+          <br>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 px-5">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="action movie/topgunmaverick.html">
+                        <div class="card text-bg-dark">
+                          <img src="img/Horor/Scary Forest.png" class="card-img img-fluid" alt="...">
+                          <div class="card-img-overlay">                          
+                          </div>
+                        </div>
+                      </a>
+                      <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Scary Forest</h5></a>
+                    </div>
+                    <div class="swiper-slide"><a href="action movie/ironman3.html">
+                        <div class="card text-bg-dark">
+                          <img src="img/Fantasy/Fantasy and Horse Story.png" class="card-img img-fluid" alt="...">
+                          <div class="card-img-overlay">
+                          </div>
+                        </div>
+                      </a>
+                      <a href="" style="text-decoration: none;"><h5 class="text-center text-dark" >Fantasy and Horse Story</h5></a>
+                    </div>
+                      <div class="swiper-slide"><a href="action movie/ironman3.html">
+                        <div class="card text-bg-dark">
+                          <img src="img/Horor/The Grim Reaper.png" class="card-img img-fluid" alt="...">
+                          <div class="card-img-overlay">
+                          </div>
+                        </div>
+                      </a>
+                      <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">The Grim Reaper</h5></a>
+                    </div>
+                    <div class="swiper-slide"><a href="action movie/doctorstrange2.html">
+                        <div class="card text-bg-dark">
+                          <img src="img/Fiksi/Sosok Asing yang Raib.png" class="card-img img-fluid"
+                            alt="...">
+                          <div class="card-img-overlay">
+                          </div>
+                        </div>
+                      </a>
+                      <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Sosok Asing yang Raib</h5></a>
+                    </div>
+                    <div class="swiper-slide"><a href="action movie/avengersinfintywar.html">
+                        <div class="card text-bg-dark">
+                          <img src="img/Horor/Wooden Door.png"
+                            class="card-img img-fluid" alt="...">
+                          <div class="card-img-overlay">
+                          </div>
+                        </div>
+                      </a>
+                      <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Wooden Door</h5>
+                      </a>
+                    </div>
+                    <div class="swiper-slide"><a href="action movie/justiceleague.html">
+                        <div class="card text-bg-dark">
+                          <img src="img/Fantasy/Old Castle Mystery.png" class="card-img img-fluid" alt="...">
+                          <div class="card-img-overlay">
+                          </div>
+                        </div>
+                      </a>
+                      <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Old Castle Mystery</h5>
+                      </a>
+                    </div>
+                    <div class="swiper-slide"><a href="action movie/inception.html">
+                        <div class="card text-bg-dark">
+                          <img src="img/Fiksi/Digital World.png"
+                            class="card-img img-fluid" alt="...">
+                          <div class="card-img-overlay">
+                          </div>
+                        </div>
+                      </a>
+                      <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Digital World</h5>
+                      </a>
+                    </div>
+                    <div class="swiper-slide"><a href="action movie/whitehousedown.html">
+                        <div class="card text-bg-dark">
+                          <img src="img/Horor/Night Monster.png" class="card-img img-fluid" alt="...">
+                          <div class="card-img-overlay">
+                          </div>
+                        </div>
+                      </a>
+                      <a href="" style="text-decoration: none;"><h5 class="text-center text-dark">Night Monster</h5>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <br><br>
+              </div> 
+            </div>
+          </div>
+        </section>
+        <!-- Trending Movies slider  -->
+
+    
+  <br>
+
+  <!-- Trending Movies title-->
+  <section>
+    <div class="container p-3">
+      <div class="row text-center">
+        <div class="col-sm-12">
+          <br>
+          <h1 class="title"><a href="Genres.html" class="linktitle" style="color: black;">Genres</a></h1>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Trending Movies title-->
+
+
+      <!-- Romance Title -->
+        <div class="row-sm-12">
+            <div class="card mb-3 p-3" style="border-radius: 15px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+              <!--Romance Genres-->  
+              <div class="row g-0 pt-3">
+                <div class="col-sm-4 p-3">
+                        <a href="Romance_Page.html" class="linktitle" style="color: black;">
+                            <div class="card rounded-5 p-3" style="background-color: pink;">
+                                <div class="card-body">
+                                <h2 class="card-title">Romance</h2>
+                                <h6 class="pb-5">/rōˈmans,ˈrōˌmans/</h6>
+                                <p class="card-text pt-5">A feeling of excitement and mystery associated with love</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href=""><img src="img/Romance/Matahari Terbenam Roman.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                        <div class="row">
+                          <div class="col text-center">Matahari Terbenam <br>dengan Anita</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href=""><img src="img/Romance/When We First Met.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                        <div class="row">
+                          <div class="col text-center">When We First <br>Met</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href=""><img src="img/Romance/Childhood to Friends Lovers.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                        <div class="row">
+                          <div class="col text-center">Childhood to Friends <br>Lovers</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href=""><img src="img/Romance/The Latte Girl.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                        <div class="row">
+                          <div class="col text-center">The Latte Girl</div>
+                        </div>
+                    </div>
+                </div>
+              <!--Romance Genres-->
+              
+              <!--Fantasy Genres-->  
+              <div class="row g-0 pt-3">
+                <div class="col-sm-4 p-3">
+                        <a href="Fantasy_Page.html" class="linktitle" style="color: black;">
+                            <div class="card rounded-5 p-3" style="background-color: lightblue;">
+                                <div class="card-body">
+                                <h2 class="card-title">Fantasy</h2>
+                                <h6 class="pb-5">/ˈfan(t)əsē/</h6>
+                                <p class="card-text pt-4">the faculty or activity of imagining things, especially things that are impossible or improbable.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href=""><img src="img/Fantasy/The Dragon Quest.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                        <div class="row">
+                          <div class="col text-center">The Dragon Quest</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href=""><img src="img/Fantasy/Old Castle Mystery.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                        <div class="row">
+                          <div class="col text-center">Old Castle Mystery</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href=""><img src="img/Fantasy/The South Witch.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                        <div class="row">
+                          <div class="col text-center">The South Witch</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href=""><img src="img/Fantasy/Fantasy and Horse Story.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                        <div class="row">
+                          <div class="col text-center">Fantasy and Horse Story</div>
+                        </div>
+                    </div>
+              <!--Fantasy Genres-->
+
+              <!--Romance Genres-->  
+              <div class="row g-0 pt-3">
+                <div class="col-sm-4 p-3">
+                    <a href="Romance_Page.html" class="linktitle" style="color: black;">
+                        <div class="card rounded-5 p-3" style="background-color: rgb(157, 68, 68);">
+                            <div class="card-body">
+                            <h2 class="card-title">Horor</h2>
+                            <h6 class="pb-5">/ˈhôrər/</h6>
+                            <p class="card-text pt-5">an intense feeling of fear, shock, or disgust.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-2">
+                    <a href=""><img src="img/Horor/Rufus Stewart.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                    <div class="row">
+                      <div class="col text-center">Rufus Stewart</div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <a href=""><img src="img/Horor/Night Monster.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                    <div class="row">
+                      <div class="col text-center">Night Monster</div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <a href=""><img src="img/Horor/Thread.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                    <div class="row">
+                      <div class="col text-center">Thread</div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <a href=""><img src="img/Horor/The Red House.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                    <div class="row">
+                      <div class="col text-center">The Red House</div>
+                    </div>
+                </div>
+            </div>
+          <!--Romance Genres-->
+
+          <!--Fantasy Genres-->  
+            <div class="row g-0 pt-3">
+                <div class="col-sm-4 p-3">
+                    <a href="Fantasy_Page.html" class="linktitle" style="color: black;">
+                        <div class="card rounded-5 p-3" style="background-color: goldenrod;">
+                            <div class="card-body">
+                            <h2 class="card-title">Fiction</h2>
+                            <h6 class="pb-5">/ˈfikSH(ə)n/</h6>
+                            <p class="card-text pt-4">a belief or statement that is false, but that is often held to be true because it is expedient to do so.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-2">
+                    <a href=""><img src="img/Fiksi/Blood Moon.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                    <div class="row">
+                      <div class="col text-center">Blood Moon</div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <a href=""><img src="img/Fiksi/Rebellious Child.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                    <div class="row">
+                      <div class="col text-center">Rebellious Child</div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <a href=""><img src="img/Fiksi/Fast Life.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                    <div class="row">
+                      <div class="col text-center">Fast Life</div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <a href=""><img src="img/Fiksi/The Beasts of The Black Hole.png"  class="img-fluid rounded-5 p-3" alt="..."></a>
+                    <div class="row">
+                      <div class="col text-center">The Beasts of The <br>Black Hole</div>
+                    </div>
+                </div>
+          <!--Fantasy Genres-->    
+                </div>
+            </div>
+        </div>
+      </div>  
+</div>
+
+  <br>
+</div>
+
+  <br>
+
+<!-- Container -->
+
+<!-- Footer -->
+<section>
+  <footer style="background: linear-gradient(135deg, #0000009a,#657383, #657383, #0000009a);" class="text-white pt-5 pb-4 sticky-bottom">
+    <div class="container text-center">
+      <div class="row text-center">
+        <div class="col-sm-3 mx-auto mt-3">
+          <a style="text-decoration: none;" href="index.html">
+            <h5 class=" mb-4 font-weight-bold judul"
+              style="color: #71b7e6 ;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 900;">
+              <span class="judul" style="color:white">Pro</span>Vitex</h5>
+          </a>
+          <p>ProVitex is a premium and free website that presents books online.</p>
+        </div>
+
+        <div class="col-sm-3 mx-auto mt-3">
+          <h5 Services class="text-uppercase mb-4 font-weight-bold" style="color:#71b7e6">
+            Services </h5>
+          <p class="Judul2">
+            <a href="Page1.html" style="text-decoration: none; color: #fff">Home</a>
+          </p>
+          <p class="Judul2">
+            <a href="trendingbook.html" style="text-decoration: none; color:#fff">Trending Stories</a>
+          </p>
+          <p class="Judul2">
+            <a href="Genres.html" style="text-decoration: none; color:#fff">Genres</a>
+          </p>
+        </div>
+
+
+        <div class="col-sm-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #71b7e6">Genres</h5>
+          <div class="description2">
+            <p class="Judul2">
+              <a href="horror.html" style="text-decoration: none; color:#ffff">Horror</a>
+            </p>
+            <p class="Judul2">
+              <a href="fantasy.html" style="text-decoration: none; color:#fff">Fantasy</a>
+            </p>
+            <p class="Judul2">
+              <a href="romance.html" style="text-decoration: none; color:#ffff">Romance</a>
+            </p>
+            <p class="Judul2">
+              <a href="Fiction.html" style="text-decoration: none; color:#ffff">Fiction</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-3 mt-3">
+          <div class="content">
+            <h5 class="text-uppercase font-weight-bold" style="color:#71b7e6">Download app
+            </h5><br>
+            <a href="#">
+              <img class="img-fluid" src="img/app-store-png-logo-33123 (3).png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="mb-4">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <p> &copy; Copyright 2022 All right reserved by
+            <a href="index.html" style="text-decoration: none;">
+              <strong style="color: #71b7e6"> Pro<span style="color: white">Vitex</span></strong></a>
+          </p>
+        </div>
+        <div class="col-sm-12">
+          <div class="text-center">    
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-twitter"></i>
+            </span>
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </span>
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </span>
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </footer>
+</section>
+<!-- Footer -->
+
+<script>
+  // Slider/swiper.js
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    slidesPerGroup: 4,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        slidesPerGroup: 2
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3
+  
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+        slidesPerGroup: 4
+      }
+    },
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  // Slider/swiper.js
+</script>
+
+
+</body>
+</html>
