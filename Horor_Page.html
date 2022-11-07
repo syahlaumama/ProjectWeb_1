@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="asset/Search.css" />
+    <!-- Title -->
+    <title>Provitex - Read Online</title>
+    <!--link animate css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    
+    
+    
+
+    <style>
+
+    body {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+
+      .Cardss {
+        background-color: white;
+        border-radius: 0 0 30px 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+      }
+
+      form.example input[type=text] {
+        padding: 5px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 80%;
+        background: #f1f1f1;
+        border-radius: 15px 0px 0px 15px;
+      }
+
+      form.example button {
+        float: left;
+        width: 20%;
+        padding: 5px;
+        background: #657383;
+        color: white;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        cursor: pointer;
+        border-radius: 0px 15px 15px 0px;
+      }
+
+      form.example button:hover {
+        background: black;
+      }
+
+      form.example::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      a.linktitle:link {
+        text-decoration: none;
+      }
+
+      a.linktitle:visited {
+        text-decoration: none;
+      }
+
+      a.linktitle:hover {
+        text-decoration: underline;
+      }
+
+      a.linktitle:active {
+        text-decoration: underline;
+      }
+    </style>
+
+</head>
+<body background="Background.png">
+
+<!--Navbar-->
+<nav style="background: linear-gradient(150deg, #657383, #72c0f4, #72c0f4, #657383);" class="navbar navbar-expand-lg navbar-dark shadow-lg pe-xl-5 sticky-top mb-4">
+  <div class="container">
+        <a style="color: white; animation-duration: 10s;"
+        class="navbar-brand animate_animated animateheadShake animate_infinite" href="index.html">Provi<span
+          style="color: white;">Tex</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 pe-xl-5">
+        <li class="nav-item dropdown">
+          <a style="color: white;" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Genres
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Fiction_Page.html">Fiction</a></li>
+            <li><a class="dropdown-item" href="Horor_Page.html">Horor</a></li>
+            <li><a class="dropdown-item" href="Fantasy_Page.html">Fantasy</a></li>
+            <li><a class="dropdown-item" href="Romance_Page.html">Romance</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a style="color: white;" class="nav-link" href="Membership.html">Membership</a>
+        </li>
+        <li class="nav-item">
+          <a style="color: white;" class="nav-link" aria-current="page" href="Login.html">Login</a>
+        </li>
+      </ul>
+  <!--Search Navbar-->  
+    <form class="example" action="/action_page.php" style="width: 60%;">
+      <input type="text" placeholder=" Search..." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
+<!--Search Navbar-->
+
+    </div>
+  </div>
+</nav>
+<!--Navbar-->
+
+
+
+
+<!-- Container -->
+<div class="container">
+    
+    <!-- Horor Content -->
+        <div class="row-sm-12">
+            <div class="card mb-3 p-3" style="border-radius: 15px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);background-color: white;">
+                <br>
+                    <!-- Horor Title -->
+                        <div class="row-sm-12">
+                            <div class="col-12 text-center pe-3">
+                                <h1>Horor Stories</h1>
+                                <hr class="ms-5 me-5">
+                            </div>
+                        </div>
+                    <!-- Horor Title -->
+                
+                <div class="row g-0">
+                  <div class="col-md-2">
+                    <a href="Horor_Page/TheGrimReaper.html"><img src="Horor_Page/Horor/The Grim Reaper.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card-body">
+                      <h4 class="card-title"> <a href="Horor_Page/TheGrimReaper.html" class="linktitle" style="color: black;"> The Grim Reaper </a></h4> 
+                      <p class="card-text" style="text-align: justify;">Death comes for us all, but after surviving a car crash that should have taken her life, Rachel Wilson finds herself stalked by the Grim Reaper himself intending on taking a soul he feels he is owed. Barely conscious in the ER room, Rachel struggles to convince the nurses that Death is coming for her and that her life is hanging in the balance. Supposedly, for her own protection, Rachel is locked up in a secure mental health facility...</p>
+                      <p class="card-text"><small class="text-muted">Last updated 30 mins ago</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <a href="Horor_Page/Witch.html"><img src="Horor_Page/Horor/Witch.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card-body">
+                      <h4 class="card-title"> <a href="Horor_Page/Witch.html" class="linktitle" style="color: black;"> Witch </a></h4> 
+                      <p class="card-text" style="text-align: justify;">In 1630 New England, panic and despair envelops a farmer, his wife and their children when youngest son Samuel suddenly vanishes. The family blames Thomasin, the oldest daughter who was watching the boy at the time of his disappearance. With suspicion and paranoia mounting, twin siblings Mercy and Jonas suspect Thomasin of witchcraft, testing the clan's faith, loyalty and love to one another.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 47 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                  <a href="Horor_Page/TheRedHouse.html"><img src="Horor_Page/Horor/The Red House.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h4 class="card-title"> <a href="Horor_Page/TheRedHouse.html" class="linktitle" style="color: black;"> The Red House</a></h4> 
+                      <p class="card-text" style="text-align: justify;">Meg lives with her adoptive parents, Pete and Ellen Morgan. When Nath, a classmate of Meg's, comes to help on their farm, Pete repeatedly tells Meg and Nath to stay out of the surrounding woods. Out of curiosity, they disobey, and Pete is irate, subsequently hiring Teller to guard the woods. As Pete's rage devolves into madness, the kids start to discover the dark secrets that are buried in the nearby land.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 15 hours ago</small></p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                  <a href="Horor_Page/Threads.html"><img src="Horor_Page/Horor/Thread.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h4 class="card-title"> <a href="Horor_Page/Threads.html" class="linktitle" style="color: black;"> Thread </a></h4> 
+                      <p class="card-text" style="text-align: justify;">Young lovers Ruth and Jimmy decide to get married after Ruth unexpectedly gets pregnant. But their quiet lives in Sheffield, England, are threatened when the Soviet Union and United States go to war. After a nuclear attack destroys a NATO base 20 miles from Sheffield, the town falls into chaos. Ruth and Jimmy are separated as the fallout spreads...</p>
+                      <p class="card-text"><small class="text-muted">Last updated 20 hours ago</small></p>
+                    </div>
+                </div>
+               
+                <div class="col-md-2">
+                  <a href="Horor_Page/LadyRose.html"><img src="Horor_Page/Horor/Lady Rose.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h4 class="card-title"> <a href="Horor_Page/LadyRose.html" class="linktitle" style="color: black;"> Lady Rose </a></h4> 
+                      <p class="card-text" style="text-align: justify;">A nurse works tirelessly to keep her family afloat after her husband loses his job. She also maintains a turbulent bond with a teenage daughter who is just like her: loving, strong-willed and deeply opinionated.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 4 Days ago</small></p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                  <a href="Horor_Page/TheLight.html"><img src="Horor_Page/Horor/The Light.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card-body">
+                      <h4 class="card-title"> <a href="Horor_Page/TheLight.html" class="linktitle" style="color: black;"> The Light </a></h4> 
+                      <p class="card-text" style="text-align: justify;">THE LIGHT portrays the loss of innocence - of life - and parallels good vs. evil, angels versus demons and light versus dark. As a young man, Adam, ventures away from the light, he finds himself in a hellishly dark warehouse. Adam discovers a religious artifact and is immediately accosted by a ruthless ex-con, "Old Scratch," and his two cohorts. Violence ensues and it appears that evil has once again prevailed.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 1 Day ago</small></p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                  <a href="Horor_Page/ScaryForest.html"><img src="Horor_Page/Horor/Scary Forest.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h4 class="card-title"> <a href="Horor_Page/ScaryForest.html" class="linktitle" style="color: black;"> Scary Forest </a></h4> 
+                      <p class="card-text" style="text-align: justify;">Nica is a daughter of an investigator, who passes a forest and hears the whispers of the "sitsit" - a monster haunting the woods. Slowly, strange things begin to happen to Nica - the same weird happenings that have killed other girls who have seen the monster myth.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 2 Days ago</small></p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                  <a href="Horor_Page/WomanUndertheSea.html"><img src="Horor_Page/Horor/Woman Under The Sea.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h4 class="card-title"> <a href="Horor_Page/WomanUndertheSea.html" class="linktitle" style="color: black;"> Woman Under the Sea </a></h4> 
+                      <p class="card-text" style="text-align: justify;">Two young women are stuck in their apartment, where they will remain almost until the end of the novel. Leah works as a marine biologist, and Miri writes grant applications, but their normal lives have been entirely suspended. When the novel opens, Miri is caring for Leah, who's just returned from a deep-sea disaster.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 2 Days ago</small></p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                  <a href="Horor_Page/TheLostRoom.html"><img src="Horor_Page/Horor/Rufus Stewart.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h4 class="card-title"> <a href="Horor_Page/TheLostRoom.html" class="linktitle" style="color: black;"> The Lost Room </a></h4> 
+                      <p class="card-text" style="text-align: justify;">Pittsburgh detective Joe Miller embarks on a desperate search for his young daughter, Anna, who disappeared from an eerie room in an abandoned New Mexico motel. That room now exists outside of normal time and space, and Joe must find a series of occult objects to use as tools to locate the key to opening the `lost room'. His quest is complicated by others who seek to find the objects for their own hidden motives.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 2 Days ago</small></p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                  <a href="Horor_Page/Basement.html"><img src="Horor_Page/Horor/Basement.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h4 class="card-title"> <a href="Horor_Page/Basement.html" class="linktitle" style="color: black;"> Basement </a></h4> 
+                      <p class="card-text" style="text-align: justify;">A Los Angeles serial killer abducts a famous musician, dragging him to a dungeon-like basement, in order to enact his own capture, torture, and murder.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 Days ago</small></p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                  <a href="Horor_Page/WoodenDoor.html"><img src="Horor_Page/Horor/Wooden Door.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h4 class="card-title"> <a href="Horor_Page/WoodenDoor.html" class="linktitle" style="color: black;"> Wooden Door</a></h4> 
+                      <p class="card-text" style="text-align: justify;">What begins as a summer-day climb up his favourite tree quickly takes an ugly turn for poor Jimmy Fincher, as he witnesses something that turns his perception of reality upside-down. When the perpetrator of the act notices Jimmy in the tree, the ensuing adventures explode into a torrent of suspense and excitement...</p>
+                      <p class="card-text"><small class="text-muted">Last updated 4 Days ago</small></p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                  <a href="Horor_Page/TheNightMonster.html"><img src="Horor_Page/Horor/Night Monster.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h4 class="card-title"> <a href="Horor_Page/TheNightMonster.html" class="linktitle" style="color: black;">The Night Monster <a></h4> 
+                      <p class="card-text" style="text-align: justify;">Every night, when the owl hoots and the shadows of the trees dance on the walls, the Night Monster creeps into Avi’s room and frightens him. One day, his sister suggests he write a letter to the monster, and Avi’s nights are not the same any more.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 1 Day ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!--Romance Content-->  
+</div>
+<!-- Container -->
+
+<!-- Footer -->
+<section>
+  <footer style="background: linear-gradient(135deg, #0000009a,#657383, #657383, #0000009a);" class="text-white pt-5 pb-4 sticky-bottom">
+    <div class="container text-center">
+      <div class="row text-center">
+        <div class="col-sm-3 mx-auto mt-3">
+          <a style="text-decoration: none;" href="index.html">
+            <h5 class=" mb-4 font-weight-bold judul"
+              style="color: #71b7e6 ;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 900;">
+              <span class="judul" style="color:white">Pro</span>Vitex</h5>
+          </a>
+          <p>ProVitex is a premium and free website that presents books online.</p>
+        </div>
+
+        <div class="col-sm-3 mx-auto mt-3">
+          <h5 Services class="text-uppercase mb-4 font-weight-bold" style="color:#71b7e6">
+            Services </h5>
+          <p class="Judul2">
+            <a href="Page1.html" style="text-decoration: none; color: #fff">Home</a>
+          </p>
+          <p class="Judul2">
+            <a href="trendingbook.html" style="text-decoration: none; color:#fff">Trending Movies</a>
+          </p>
+          <p class="Judul2">
+            <a href="genres.html" style="text-decoration: none; color:#fff">Genres</a>
+          </p>
+        </div>
+
+
+        <div class="col-sm-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #71b7e6">Genres</h5>
+          <div class="description2">
+            <p class="Judul2">
+              <a href="horror.html" style="text-decoration: none; color:#ffff">Horror</a>
+            </p>
+            <p class="Judul2">
+              <a href="fantasy.html" style="text-decoration: none; color:#fff">Fantasy</a>
+            </p>
+            <p class="Judul2">
+              <a href="romance.html" style="text-decoration: none; color:#ffff">Romance</a>
+            </p>
+            <p class="Judul2">
+              <a href="Fiction.html" style="text-decoration: none; color:#ffff">Fiction</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-3 mt-3">
+          <div class="content">
+            <h5 class="text-uppercase font-weight-bold" style="color:#71b7e6">Download app
+            </h5><br>
+            <a href="#">
+              <img class="img-fluid" src="img/app-store-png-logo-33123 (3).png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="mb-4">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <p> &copy; Copyright 2022 All right reserved by
+            <a href="index.html" style="text-decoration: none;">
+              <strong style="color: #71b7e6"> Pro<span style="color: white">Vitex</span></strong></a>
+          </p>
+        </div>
+        <div class="col-sm-12">
+          <div class="text-center">    
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-twitter"></i>
+            </span>
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </span>
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </span>
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </footer>
+</section>
+<!-- Footer -->
+
+<script>
+  // Slider/swiper.js
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    slidesPerGroup: 4,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        slidesPerGroup: 2
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3
+  
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+        slidesPerGroup: 4
+      }
+    },
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  // Slider/swiper.js
+</script>
+
+
+</body>
+</html>
