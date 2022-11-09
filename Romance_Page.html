@@ -40,6 +40,15 @@
 
       }
 
+      @font-face {
+        font-family: myFirstFont;
+        src: url(asset/Vogue.ttf);
+      }
+
+      .Vogue {
+        font-family: myFirstFont;
+      }
+
       form.example input[type=text] {
         padding: 5px;
         font-size: 17px;
@@ -94,40 +103,46 @@
 <body background="Background.png">
 
 <!--Navbar-->
-  <nav style="background: linear-gradient(150deg, #657383, #72c0f4, #72c0f4, #657383);" class="navbar navbar-expand-lg navbar-dark shadow-lg pe-xl-5 sticky-top">
-    <div class="container">
-          <a style="color: white; animation-duration: 10s;"
-          class="navbar-brand animate__animated animate__headShake animate__infinite" href="Page1.html">Provi<span
-            style="color: white;">Tex</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 pe-xl-5">
-          <li class="nav-item">
-            <a style="color: white;" class="nav-link" aria-current="page" href="#">Trending</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a style="color: white;" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Genres
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Fiction</a></li>
-              <li><a class="dropdown-item" href="#">Horor</a></li>
-              <li><a class="dropdown-item" href="#">Fantasy</a></li>
-              <li><a class="dropdown-item" href="#">Romance</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a style="color: white;" class="nav-link" href="Membership.html">Membership</a>
-          </li>
-        </ul>
-        <a href="login.html"><button type="button" class="btn btn-light"><i class="fa-solid fa-right-to-bracket"></i>
-          Login</button></a>
-      </div>
+<nav style="background: linear-gradient(150deg, #657383, #72c0f4, #72c0f4, #657383);" class="navbar navbar-expand-lg navbar-dark shadow-lg pe-xl-5 sticky-top mb-4">
+  <div class="container">
+        <a style="color: white; animation-duration: 10s;"
+        class="navbar-brand animate_animated animateheadShake animate_infinite" href="index.html">Provi<span
+          style="color: white;">Tex</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 pe-xl-5">
+        <li class="nav-item dropdown">
+          <a style="color: white;" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Genres
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Fiction_Page.html">Fiction</a></li>
+            <li><a class="dropdown-item" href="Horor_Page.html">Horor</a></li>
+            <li><a class="dropdown-item" href="Fantasy_Page.html">Fantasy</a></li>
+            <li><a class="dropdown-item" href="Romance_Page.html">Romance</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a style="color: white;" class="nav-link" href="Membership.html">Membership</a>
+        </li>
+        <li class="nav-item">
+          <a style="color: white;" class="nav-link" aria-current="page" href="Login.html">Login</a>
+        </li>
+      </ul>
+  <!--Search Navbar-->  
+    <form class="example" action="/action_page.php" style="width: 60%;">
+      <input type="text" placeholder=" Search..." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
+<!--Search Navbar-->
+
     </div>
-  </nav>
+  </div>
+</nav>
 <!--Navbar-->
 
 
@@ -142,15 +157,7 @@
 <!-- Container -->
 <div class="container">
 
-    <!--Search Navbar-->  
-  <nav class="navbar navbar-expand-sm justify-content-center pt-3">
-    <form class="example" action="/action_page.php" style="width: 100%;">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </nav>
-    <!--Search Navbar-->
-    
+  
     <!-- Romance Content -->
         <div class="row-sm-12">
             <div class="card mb-3 p-3" style="border-radius: 15px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
@@ -158,7 +165,7 @@
                     <!-- Romance Title -->
                         <div class="row-sm-12">
                             <div class="col-12 text-center pe-3">
-                                <h1>Romance Stories</h1>
+                                <h1 class="title Vogue"> <b> Romance Stories </b> </h1>
                                 <hr class="ms-5 me-5">
                             </div>
                         </div>
@@ -166,121 +173,121 @@
                 
                 <div class="row g-0">
                   <div class="col-md-2">
-                    <img src="img/Romance/before you go.png"  class="img-fluid rounded-5 p-3" alt="...">
+                    <a href="Romance_Page/BeforeWeGo.html"><img src="Romance_Page/Romance/before you go.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
                   </div>
                   <div class="col-md-4">
                     <div class="card-body">
-                      <h4 class="card-title">Before You Go</h4>
+                      <h4 class="card-title"> <a href="Romance_Page/BeforeWeGo.html" class="linktitle" style="color: black;"> Before You Go </a></h4> 
                       <p class="card-text" style="text-align: justify;">Before We Go tells the story of a street artist named Nick Vaughan. Nick accidentally meets Brooke Dalton at Grand Central station. Investigate a calibration. Brooke just missed the last train to Boston. Not only that, Brooke also lost her bag and her cellphone was damaged. While all that is left is a train ticket that can only be used the next day. </p>
                       <p class="card-text"><small class="text-muted">Last updated 10 mins ago</small></p>
                     </div>
                   </div>
                   <div class="col-md-2">
-                    <img src="img/Romance/Childhood to Friends Lovers.png"  class="img-fluid rounded-5 p-3" alt="...">
+                    <a href="Romance_Page/FriendsLovers.html"><img src="Romance_Page/Romance/Childhood to Friends Lovers.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
                   </div>
                   <div class="col-md-4">
                     <div class="card-body">
-                      <h4 class="card-title">Childhood to Friends Lovers</h4>
+                      <h4 class="card-title"> <a href="Romance_Page/FriendsLovers.html" class="linktitle" style="color: black;"> Childhood to Friends Lovers </a></h4> 
                       <p class="card-text" style="text-align: justify;">The high school monkey love story repeats itself ten years after the two characters grow up. Kyung Woo Yeon is an innocent and innocent 18-year-old girl. He falls in love with his friend, Lee Soo. But unlucky, Lee Soo considers him nothing more than a friend. Ten years later, Woo Yeon doesn't realize he still has big feelings for Lee Soo. Will Lee Soo see Woo Yeon as a woman this time?</p>
                       <p class="card-text"><small class="text-muted">Last updated 57 mins ago</small></p>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <img src="img/Romance/Kenangan tadi Malam.png"  class="img-fluid rounded-5 p-3" alt="...">
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card-body">
-                      <h4 class="card-title">Kenangan tadi Malam</h4>
+                  <a href="Romance_Page/KenanganMalam.html"><img src="Romance_Page/Romance/Kenangan tadi Malam.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h4 class="card-title"> <a href="Romance_Page/KenanganMalam.html" class="linktitle" style="color: black;"> Kenangan Tadi Malam </a></h4>
                       <p class="card-text" style="text-align: justify;">Dokter memeriksa Ricky dan menjelaskan kondisi Ricky yang masih mengalami infeksi akibat luka tembak di perutnya. Elsa yang sudah ada di dalam penjara ternyata kondisinya mengenaskan, setelah beberapa kali dipanggil polisi Elsa tidak menjawab dan setelah diperiksa, Elsa sakit dan langsung dibawa ke klinik penjara.</p>
                       <p class="card-text"><small class="text-muted">Last updated 12 hours ago</small></p>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <img src="img/Romance/Love at First Sight.png"  class="img-fluid rounded-5 p-3" alt="...">
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card-body">
-                      <h4 class="card-title">Love at First Sight</h4>
+                  <a href="Romance_Page/LoveFirstSight.html"><img src="Romance_Page/Romance/Love at First Sight.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h4 class="card-title"> <a href="Romance_Page/LoveFirstSight.html" class="linktitle" style="color: black;"> Love at First Sight </a></h4>
                       <p class="card-text" style="text-align: justify;">Tong Xiaoman is an acting student who has just found out that she has terminal cancer. He only had three months to live. Ou Zeye is a businessman who suffers from a curse, he will turn into a bloodthirsty creature every time the full moon arrives. The two very different people meet one day, and through their daily interactions, the two fall in love.</p>
                       <p class="card-text"><small class="text-muted">Last updated 20 hours ago</small></p>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <img src="img/Romance/Love Story.png"  class="img-fluid rounded-5 p-3" alt="...">
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card-body">
-                      <h4 class="card-title">Love Story</h4>
+                  <a href="Romance_Page/LoveStory.html"><img src="Romance_Page/Romance/Love Story.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h4 class="card-title"> <a href="Romance_Page/LoveStory.html" class="linktitle" style="color: black;"> Love Story </a></h4>
                       <p class="card-text" style="text-align: justify;">Ken who is currently still languishing or in prison and he is currently being ganged up by several other prisoners. But Ken is not his name if he is not able to paralyze people who want to do bad to him even though they have to work hard and in the end some prisoners are now on their knees in front of Ken.</p>
                       <p class="card-text"><small class="text-muted">Last updated 1 Day ago</small></p>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <img src="img/Romance/Matahari Terbenam Roman.png"  class="img-fluid rounded-5 p-3" alt="...">
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card-body">
-                      <h4 class="card-title">Matahari Terbenam Dengan Anita</h4>
+                  <a href="Romance_Page/MatahariAnita.html"><img src="Romance_Page/Romance/Matahari Terbenam Roman.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h4 class="card-title"> <a href="Romance_Page/MatahariAnita.html" class="linktitle" style="color: black;"> Matahari Terbenam dengan Anita </a></h4>
                       <p class="card-text" style="text-align: justify;">Anita dikenal sebagai wanita aneh. Ditambah lagi, ada Firman yang menjadi pelindung Anita. Firman adalah teman kuliah Anita. Diam-diam Firman mencintai Anita. Firman begitu mengerti tentang Anita, hingga kehangatan yang diberikannya membuat Anita nyaman. Bersama Firman, Anita bagaikan Bulan yang selalu ditemani Bintang di gelapnya malam.</p>
                       <p class="card-text"><small class="text-muted">Last updated 1 Day ago</small></p>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <img src="img/Romance/Stay With Me.png"  class="img-fluid rounded-5 p-3" alt="...">
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card-body">
-                      <h4 class="card-title">Stay With Me</h4>
+                  <a href="Romance_Page/StayWithMe.html"><img src="Romance_Page/Romance/Stay With Me.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h4 class="card-title"> <a href="Romance_Page/StayWithMe.html" class="linktitle" style="color: black;"> Stay With Me </a></h4>
                       <p class="card-text" style="text-align: justify;">The story begins with an aspiring musician named Woo Jin who is clumsy in matters of love. Previously, he had a first love named Yeon Soo who is an aspiring actress. Woo Jin himself seems to be missing Yeon Soo when he wanted to achieve his goals. Both of them will find a moment where their encounter becomes more intense. Then, Will the two of them unite and become a couple?</p>
                       <p class="card-text"><small class="text-muted">Last updated 2 Days ago</small></p>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <img src="img/Romance/Strange Days.png"  class="img-fluid rounded-5 p-3" alt="...">
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card-body">
-                      <h4 class="card-title">Strange Days</h4>
+                  <a href="Romance_Page/StrangeDays.html"><img src="Romance_Page/Romance/Strange Days.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h4 class="card-title"> <a href="Romance_Page/StrangeDays.html" class="linktitle" style="color: black;"> Strange Days </a></h4>
                       <p class="card-text" style="text-align: justify;">Lenny Nero has moved into a more lucrative trade: the illegal sale of virtual reality-like recordings that allow users to experience the emotions and past experiences of others. While the bootlegs typically contain tawdry incidents, Nero is shocked when he receives one showing a murder. He enlists a friend, to help find the killer and the two soon stumble upon a vast conspiracy involving the police force Nero once worked for.</p>
                       <p class="card-text"><small class="text-muted">Last updated 2 Days ago</small></p>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <img src="img/Romance/The Day We Met.png"  class="img-fluid rounded-5 p-3" alt="...">
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card-body">
-                      <h4 class="card-title">The Day We Met</h4>
+                  <a href="Romance_Page/TheDayWeMet.html"><img src="Romance_Page/Romance/The Day We Met.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h4 class="card-title"> <a href="Romance_Page/TheDayWeMet.html" class="linktitle" style="color: black;"> The Day We Met </a></h4>
                       <p class="card-text" style="text-align: justify;">A man named Song Hyun Chul, who suddenly had an accident in a coma, besides that there was another man with the same name and date of birth named Song Hyun Chul On the same day, Go Chang Suk was in a car accident but was not seriously injured, then a careless death angel who was supposed to take the life of Song Hyun Chul  mistakenly took the life of Song Hyun Chul , the spirit of Song Hyun.</p>
                       <p class="card-text"><small class="text-muted">Last updated 2 Days ago</small></p>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <img src="img/Romance/The Four of Us.png"  class="img-fluid rounded-5 p-3" alt="...">
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card-body">
-                      <h4 class="card-title">The Four of Us</h4>
+                  <a href="Romance_Page/TheFourofUs.html"><img src="Romance_Page/Romance/The Four of Us.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h4 class="card-title"> <a href="Romance_Page/TheFourofUs.html" class="linktitle" style="color: black;"> The Four of Us </a></h4>
                       <p class="card-text" style="text-align: justify;">Janina is a journalist who gets little attention from her editors. He is often defeated by his co-workers who are good at making faces, so he is luckier. Ben, Janina's original partner is a failed actor, he is still unlucky in his career. Meanwhile, Nils works as a sarcastic and cynical property consultant. The words that came out of his mouth were always sharp. Nils is Maria's real partner, a teacher who is patient and has a warm personality.</p>
                       <p class="card-text"><small class="text-muted">Last updated 3 Days ago</small></p>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <img src="img/Romance/The Latte Girl.png"  class="img-fluid rounded-5 p-3" alt="...">
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card-body">
-                      <h4 class="card-title">The Latte Girl</h4>
+                  <a href="Romance_Page/TheLatteGirl.html"><img src="Romance_Page/Romance/The Latte Girl.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h4 class="card-title"> <a href="Romance_Page/TheLatteGirl.html" class="linktitle" style="color: black;"> The Latte Girl </a></h4>
                       <p class="card-text" style="text-align: justify;">When Yeon-du was preparing to go to the US for heart surgery. He then confided in Na Bo-ra that she didn't want to go because she fell in love with their schoolmate, Baek Hyun-jin. After hearing Yeon-du's story, Bo-ra feels the need to help her best friend. He then promises to find out everything about Hyun-jin by following him secretly.</p>
                       <p class="card-text"><small class="text-muted">Last updated 4 Days ago</small></p>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <img src="img/Romance/When We First Met.png"  class="img-fluid rounded-5 p-3" alt="...">
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card-body">
-                      <h4 class="card-title">When We First Met</h4>
+                  <a href="Romance_Page/WhenWeFirstMet.html"><img src="Romance_Page/Romance/When We First Met.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h4 class="card-title"> <a href="Romance_Page/WhenWeFirstMet.html" class="linktitle" style="color: black;"> When We First Met </a></h4>
                       <p class="card-text" style="text-align: justify;">After spending a night with the girl of his dreams only to become just friends, a man gets the opportunity to travel through time and alter that night over and over again until he gets everything perfect.</p>
                       <p class="card-text"><small class="text-muted">Last updated 4 Days ago</small></p>
                     </div>
@@ -310,13 +317,13 @@
           <h5 Services class="text-uppercase mb-4 font-weight-bold" style="color:#71b7e6">
             Services </h5>
           <p class="Judul2">
-            <a href="Page1.html" style="text-decoration: none; color: #fff">Home</a>
+            <a href="index.html" style="text-decoration: none; color: #fff">Home</a>
           </p>
           <p class="Judul2">
-            <a href="trendingbook.html" style="text-decoration: none; color:#fff">Trending Movies</a>
+            <a href="Membership.html" style="text-decoration: none; color:#fff">Membership</a>
           </p>
           <p class="Judul2">
-            <a href="genres.html" style="text-decoration: none; color:#fff">Genres</a>
+            <a href="Login.html" style="text-decoration: none; color:#fff">Login</a>
           </p>
         </div>
 
@@ -325,16 +332,16 @@
           <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #71b7e6">Genres</h5>
           <div class="description2">
             <p class="Judul2">
-              <a href="horror.html" style="text-decoration: none; color:#ffff">Horror</a>
+              <a href="Horor_Page.html" style="text-decoration: none; color:#ffff">Horror</a>
             </p>
             <p class="Judul2">
-              <a href="fantasy.html" style="text-decoration: none; color:#fff">Fantasy</a>
+              <a href="Fantasy_Page.html" style="text-decoration: none; color:#fff">Fantasy</a>
             </p>
             <p class="Judul2">
-              <a href="romance.html" style="text-decoration: none; color:#ffff">Romance</a>
+              <a href="Romance_Page.html" style="text-decoration: none; color:#ffff">Romance</a>
             </p>
             <p class="Judul2">
-              <a href="Fiction.html" style="text-decoration: none; color:#ffff">Fiction</a>
+              <a href="Fiction_Page.html" style="text-decoration: none; color:#ffff">Fiction</a>
             </p>
           </div>
         </div>

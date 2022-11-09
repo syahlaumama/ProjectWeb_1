@@ -63,6 +63,15 @@
         border-radius: 0px 15px 15px 0px;
       }
 
+      @font-face {
+        font-family: myFirstFont;
+        src: url(asset/Vogue.ttf);
+      }
+
+      .Vogue {
+        font-family: myFirstFont;
+      }
+
       form.example button:hover {
         background: black;
       }
@@ -94,62 +103,52 @@
 <body background="Background.png">
 
 <!--Navbar-->
-  <nav style="background: linear-gradient(150deg, #657383, #72c0f4, #72c0f4, #657383);" class="navbar navbar-expand-lg navbar-dark shadow-lg pe-xl-5 sticky-top">
-    <div class="container">
-          <a style="color: white; animation-duration: 10s;"
-          class="navbar-brand animate__animated animate__headShake animate__infinite" href="Page1.html">Provi<span
-            style="color: white;">Tex</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 pe-xl-5">
-          <li class="nav-item">
-            <a style="color: white;" class="nav-link" aria-current="page" href="#">Trending</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a style="color: white;" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Genres
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Fiction</a></li>
-              <li><a class="dropdown-item" href="#">Horor</a></li>
-              <li><a class="dropdown-item" href="#">Fantasy</a></li>
-              <li><a class="dropdown-item" href="#">Romance</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a style="color: white;" class="nav-link" href="Membership.html">Membership</a>
-          </li>
-        </ul>
-        <a href="login.html"><button type="button" class="btn btn-light"><i class="fa-solid fa-right-to-bracket"></i>
-          Login</button></a>
-      </div>
+<nav style="background: linear-gradient(150deg, #657383, #72c0f4, #72c0f4, #657383);" class="navbar navbar-expand-lg navbar-dark shadow-lg pe-xl-5 sticky-top mb-4">
+  <div class="container">
+        <a style="color: white; animation-duration: 10s;"
+        class="navbar-brand animate_animated animateheadShake animate_infinite" href="index.html">Provi<span
+          style="color: white;">Tex</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 pe-xl-5">
+        <li class="nav-item dropdown">
+          <a style="color: white;" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Genres
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Fiction_Page.html">Fiction</a></li>
+            <li><a class="dropdown-item" href="Horor_Page.html">Horor</a></li>
+            <li><a class="dropdown-item" href="Fantasy_Page.html">Fantasy</a></li>
+            <li><a class="dropdown-item" href="Romance_Page.html">Romance</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a style="color: white;" class="nav-link" href="Membership.html">Membership</a>
+        </li>
+        <li class="nav-item">
+          <a style="color: white;" class="nav-link" aria-current="page" href="Login.html">Login</a>
+        </li>
+      </ul>
+  <!--Search Navbar-->  
+    <form class="example" action="/action_page.php" style="width: 60%;">
+      <input type="text" placeholder=" Search..." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
+<!--Search Navbar-->
+
     </div>
-  </nav>
+  </div>
+</nav>
 <!--Navbar-->
-
-
-
-
-
-
-
 
 
 
 <!-- Container -->
 <div class="container">
-
-    <!--Search Navbar-->  
-  <nav class="navbar navbar-expand-sm justify-content-center pt-3">
-    <form class="example" action="/action_page.php" style="width: 100%;">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </nav>
-    <!--Search Navbar-->
     
     <!-- Romance Content -->
         <div class="row-sm-12">
@@ -158,7 +157,7 @@
                     <!-- Romance Title -->
                         <div class="row-sm-12">
                             <div class="col-12 text-center pe-3">
-                                <h1>Fantasy Stories</h1>
+                                <h1 class="title Vogue"> <b>Fantasy Stories</b> </h1>
                                 <hr class="ms-5 me-5">
                             </div>
                         </div>
@@ -166,121 +165,121 @@
                 
                 <div class="row g-0">
                   <div class="col-md-2">
-                    <img src="Fantasy Page/Fantasy/Dream.png"  class="img-fluid rounded-5 p-3" alt="...">
+                    <a href="Fantasy_Page/Dream.html"><img src="Fantasy_Page/Fantasy/Dream.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
                   </div>
-                  <div class="col-md-4">
-                    <div class="card-body">
-                      <h4 class="card-title">Dream</h4>
+                    <div class="col-md-4">
+                      <div class="card-body">
+                        <h4 class="card-title"> <a href="Fantasy_Page/Dream.html" class="linktitle" style="color: black;"> Dream </a></h4>
                       <p class="card-text" style="text-align: justify;">This imaginative Japanese production presents a series of short films by lauded director Akira Kurosawa. In one chapter, a young boy spies on foxes that are holding a wedding ceremony; the following instalment features another youth, who witnesses a magical moment in an orchard. In the segment "Crows," an aspiring artist enters the world of a painting and encounters Vincent van Gogh...</p>
                       <p class="card-text"><small class="text-muted">Last updated 10 mins ago</small></p>
                     </div>
                   </div>
                   <div class="col-md-2">
-                    <img src="Fantasy Page/Fantasy/Fantasy and Horse Story.png"  class="img-fluid rounded-5 p-3" alt="...">
+                    <a href="Fantasy_Page/FantasyandHorseStory.html"><img src="Fantasy_Page/Fantasy/Fantasy and Horse Story.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
                   </div>
-                  <div class="col-md-4">
-                    <div class="card-body">
-                      <h4 class="card-title">Fantasy and Horse Story</h4>
+                    <div class="col-md-4">
+                      <div class="card-body">
+                        <h4 class="card-title"> <a href="Fantasy_Page/FantasyandHorseStory.html" class="linktitle" style="color: black;"> Fantasy and Horse Story </a></h4>
                       <p class="card-text" style="text-align: justify;">When Monica's horse, Champion, breaks horse tradition and reveals to her that horses can talk, Monica helps him figure out what kind of horse he wants to be when he grows up and ultimately discovers her own path as well.</p>
                       <p class="card-text"><small class="text-muted">Last updated 57 mins ago</small></p>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <img src="Fantasy Page/Fantasy/Mission.png"  class="img-fluid rounded-5 p-3" alt="...">
-                  </div>
+                  <a href="Fantasy_Page/Mission.html"><img src="Fantasy_Page/Fantasy/Mission.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
                   <div class="col-md-4">
                     <div class="card-body">
-                      <h4 class="card-title">Mission</h4>
+                      <h4 class="card-title"> <a href="Fantasy_Page/Mission.html" class="linktitle" style="color: black;"> Mission </a></h4>
                       <p class="card-text" style="text-align: justify;">Jesuit priest Father Gabriel enters the Guarani lands in South America with the purpose of converting the natives to Christianity. He soon builds a mission, where he is joined by Rodrigo Mendoza, a reformed slave trader seeking redemption. When a treaty transfers the land from Spain to Portugal, the Portuguese government wants to capture the natives for slave labour...</p>
                       <p class="card-text"><small class="text-muted">Last updated 12 hours ago</small></p>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <img src="Fantasy Page/Fantasy/Modern Witch Club.png"  class="img-fluid rounded-5 p-3" alt="...">
-                  </div>
+                  <a href="Fantasy_Page/ModernWitchClub.html"><img src="Fantasy_Page/Fantasy/Modern Witch Club.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
                   <div class="col-md-4">
                     <div class="card-body">
-                      <h4 class="card-title">Modern Witch Club</h4>
+                      <h4 class="card-title"> <a href="Fantasy_Page/ModernWitchClub.html" class="linktitle" style="color: black;"> Modern Witch Club </a></h4>
                       <p class="card-text" style="text-align: justify;">Fall in love with three eccentric witches and one mischievous fairy as you battle alongside them as a cursed skull! Help them grow and come to terms with their past as they feast, drink, and fight to fulfil their dreams!</p>
                       <p class="card-text"><small class="text-muted">Last updated 20 hours ago</small></p>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <img src="Fantasy Page/Fantasy/Old Boat.png"  class="img-fluid rounded-5 p-3" alt="...">
-                  </div>
+                  <a href="Fantasy_Page/TheOldBoat.html"><img src="Fantasy_Page/Fantasy/Old Boat.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
                   <div class="col-md-4">
                     <div class="card-body">
-                      <h4 class="card-title">Old Boat.png</h4>
+                      <h4 class="card-title"> <a href="Fantasy_Page/TheOldBoat.html" class="linktitle" style="color: black;"> Old Boat </a></h4>
                       <p class="card-text" style="text-align: justify;">Off a small island, a boy and his grandmother set sail in their beloved fishing boat. They ride the waves, dreaming, catching fish, and seeing the wonders of the ocean. But soon the boy is sailing the boat himself, venturing further from shore as the waters grow dirty and polluted...</p>
                       <p class="card-text"><small class="text-muted">Last updated 1 Day ago</small></p>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <img src="Fantasy Page/Fantasy/Old Castle Mystery.png"  class="img-fluid rounded-5 p-3" alt="...">
-                  </div>
+                  <a href="Fantasy_Page/OldCastleMystery.html"><img src="Fantasy_Page/Fantasy/Old Castle Mystery.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
                   <div class="col-md-4">
                     <div class="card-body">
-                      <h4 class="card-title">Old Castle Mystery</h4>
+                      <h4 class="card-title"> <a href="Fantasy_Page/OldCastleMystery.html" class="linktitle" style="color: black;"> Old Castle Mystery </a></h4>
                       <p class="card-text" style="text-align: justify;">Fourteen-year-old Gail Albright accepts a summer job babysitting in a grand old castle on the Columbia River. All at once she enters a Victorian world a duchess, her son Lance, two grandchildren, and a gruff handyman. Gail's summer is an unusual medley of picnics suspicious accidents the unhappiness of the frightened grandson the pranks of his rowdy sister the friendship of tall...</p>
                       <p class="card-text"><small class="text-muted">Last updated 1 Day ago</small></p>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <img src="Fantasy Page/Fantasy/The black Crow.png"  class="img-fluid rounded-5 p-3" alt="...">
-                  </div>
+                  <a href="Fantasy_Page/TheBlackCrow.html"><img src="Fantasy_Page/Fantasy/The black Crow.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
                   <div class="col-md-4">
                     <div class="card-body">
-                      <h4 class="card-title">he Black Crow</h4>
+                      <h4 class="card-title"> <a href="Fantasy_Page/TheBlackCrow.html" class="linktitle" style="color: black;"> The Black Crow </a></h4>
                       <p class="card-text" style="text-align: justify;">Kazuki works as a rookie host at a host club. One of his regular customers is Mai, but she disappears. Mai has a tab of 6 million yen with the host club. The bar owner orders Kazuki to find Mai within a week or Kazuki will have to pay back her debt. Kazuki turns to problem-solving office Kurogarasu. There, Kuroto, Yuya and Hina are hired by Kazuki to find Mai and he offers them 3 million yen.</p>
                       <p class="card-text"><small class="text-muted">Last updated 2 Days ago</small></p>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <img src="Fantasy Page/Fantasy/The Dragon Quest.png"  class="img-fluid rounded-5 p-3" alt="...">
-                  </div>
+                  <a href="Fantasy_Page/TheDragonQuest.html"><img src="Fantasy_Page/Fantasy/The Dragon Quest.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
                   <div class="col-md-4">
                     <div class="card-body">
-                      <h4 class="card-title">The Dragon Quest</h4>
+                      <h4 class="card-title"> <a href="Fantasy_Page/TheDragonQuest.html" class="linktitle" style="color: black;"> The Dragon Quest </a></h4>
                       <p class="card-text" style="text-align: justify;">Thirteen dwarves commanded by Gorin, the burglar Bibli Banggin and the wizard Zandalv travel to Lonely Mountain to steal the Arkenstone from the dragon Somaug to join the dwarves. During their dangerous journey, they need to fight against giant spiders and Orcs and they are captured but flee from the Elves. But Smaug is not easily deceived and flies to Lake-town to destroy the town and the dwellers.</p>
                       <p class="card-text"><small class="text-muted">Last updated 2 Days ago</small></p>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <img src="Fantasy Page/Fantasy/The Exiled Queen.png"  class="img-fluid rounded-5 p-3" alt="...">
-                  </div>
+                  <a href="Fantasy_Page/TheExiledQueen.html"><img src="Fantasy_Page/Fantasy/The Exiled Queen.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
                   <div class="col-md-4">
                     <div class="card-body">
-                      <h4 class="card-title">The Exiled Queen</h4>
+                      <h4 class="card-title"> <a href="Fantasy_Page/TheExiledQueen.html" class="linktitle" style="color: black;"> The Exiled Queen </a></h4>
                       <p class="card-text" style="text-align: justify;">Haunted by the loss of his mother and sister, hunted by the powerful Bayar family, Han Alister makes a devil's bargain with the clans. If they sponsor his schooling at Mystwerk Academy at Oden's Ford, he will become their magical sell-sword against the power-hungry Wizard Council.</p>
                       <p class="card-text"><small class="text-muted">Last updated 2 Days ago</small></p>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <img src="Fantasy Page/Fantasy/The South Witch.png"  class="img-fluid rounded-5 p-3" alt="...">
-                  </div>
+                  <a href="Fantasy_Page/TheSouthWitch.html"><img src="Fantasy_Page/Fantasy/The South Witch.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
                   <div class="col-md-4">
                     <div class="card-body">
-                      <h4 class="card-title">The South Witch</h4>
+                      <h4 class="card-title"> <a href="Fantasy_Page/TheSouthWitch.html" class="linktitle" style="color: black;"> The South Witch </a></h4>
                       <p class="card-text" style="text-align: justify;">A female high school student is trained to become a murder weapon. Medical experiments are used on living bodies in the process. While suffering through an identity crisis, she becomes involved in a crime.</p>
                       <p class="card-text"><small class="text-muted">Last updated 3 Days ago</small></p>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <img src="Fantasy Page/Fantasy/Timeless.png"  class="img-fluid rounded-5 p-3" alt="...">
-                  </div>
+                  <a href="Fantasy_Page/Timeless.html"><img src="Fantasy_Page/Fantasy/Timeless.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
                   <div class="col-md-4">
                     <div class="card-body">
-                      <h4 class="card-title">Timeless</h4>
+                      <h4 class="card-title"> <a href="Fantasy_Page/Timeless.html" class="linktitle" style="color: black;"> Timeless </a></h4>
                       <p class="card-text" style="text-align: justify;">Timeless tells the story of a mysterious criminal who steals a secret state-of-the-art time machine, intent on destroying America as we know it by changing the past. The only hope is an unexpected team: a scientist, a soldier and a history professor, who must use the machine's prototype to travel back in time to critical events...</p>
                       <p class="card-text"><small class="text-muted">Last updated 4 Days ago</small></p>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <img src="Fantasy Page/Fantasy/Woman Story.png"  class="img-fluid rounded-5 p-3" alt="...">
-                  </div>
+                  <a href="Fantasy_Page/WomanStory.html"><img src="Fantasy_Page/Fantasy/Woman Story.png"  class="img-fluid rounded-5 p-3" alt="..."></a>                   
+                </div>
                   <div class="col-md-4">
                     <div class="card-body">
-                      <h4 class="card-title">Woman Story</h4>
+                      <h4 class="card-title"> <a href="Fantasy_Page/WomanStory.html" class="linktitle" style="color: black;"> Woman Story </a></h4>
                       <p class="card-text" style="text-align: justify;">In the years after the Civil War, Jo March lives in New York and makes her living as a writer, while her sister Amy studies painting in Paris. Amy has a chance encounter with Theodore, a childhood crush who proposed to Jo but was ultimately rejected. Their oldest sibling, Meg, is married to a schoolteacher, while shy sister Beth develops a devastating illness that brings the family back together.</p>
                       <p class="card-text"><small class="text-muted">Last updated 4 Days ago</small></p>
                     </div>
@@ -310,13 +309,13 @@
           <h5 Services class="text-uppercase mb-4 font-weight-bold" style="color:#71b7e6">
             Services </h5>
           <p class="Judul2">
-            <a href="Page1.html" style="text-decoration: none; color: #fff">Home</a>
+            <a href="index.html" style="text-decoration: none; color: #fff">Home</a>
           </p>
           <p class="Judul2">
-            <a href="trendingbook.html" style="text-decoration: none; color:#fff">Trending Movies</a>
+            <a href="Membership.html" style="text-decoration: none; color:#fff">Membership</a>
           </p>
           <p class="Judul2">
-            <a href="genres.html" style="text-decoration: none; color:#fff">Genres</a>
+            <a href="Login.html" style="text-decoration: none; color:#fff">Login</a>
           </p>
         </div>
 
@@ -325,16 +324,16 @@
           <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #71b7e6">Genres</h5>
           <div class="description2">
             <p class="Judul2">
-              <a href="horror.html" style="text-decoration: none; color:#ffff">Horror</a>
+              <a href="Horor_Page.html" style="text-decoration: none; color:#ffff">Horror</a>
             </p>
             <p class="Judul2">
-              <a href="fantasy.html" style="text-decoration: none; color:#fff">Fantasy</a>
+              <a href="Fantasy_Page.html" style="text-decoration: none; color:#fff">Fantasy</a>
             </p>
             <p class="Judul2">
-              <a href="romance.html" style="text-decoration: none; color:#ffff">Romance</a>
+              <a href="Romance_Page.html" style="text-decoration: none; color:#ffff">Romance</a>
             </p>
             <p class="Judul2">
-              <a href="Fiction.html" style="text-decoration: none; color:#ffff">Fiction</a>
+              <a href="Fiction_Page.html" style="text-decoration: none; color:#ffff">Fiction</a>
             </p>
           </div>
         </div>
@@ -354,7 +353,7 @@
       <div class="row">
         <div class="col-sm-12 text-center">
           <p> &copy; Copyright 2022 All right reserved by
-            <a href="index.html" style="text-decoration: none;">
+            <a href="../index.html" style="text-decoration: none;">
               <strong style="color: #71b7e6"> Pro<span style="color: white">Vitex</span></strong></a>
           </p>
         </div>

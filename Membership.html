@@ -49,6 +49,15 @@
         border-radius: 0px 15px 15px 0px;
       }
 
+      @font-face {
+        font-family: myFirstFont;
+        src: url(asset/Vogue.ttf);
+      }
+
+      .Vogue {
+        font-family: myFirstFont;
+      }
+
       form.example button:hover {
         background: black;
       }
@@ -70,10 +79,11 @@
 <body background="Background.png">
 
 <!--Navbar-->
+
 <nav style="background: linear-gradient(150deg, #657383, #72c0f4, #72c0f4, #657383);" class="navbar navbar-expand-lg navbar-dark shadow-lg pe-xl-5 sticky-top">
   <div class="container">
         <a style="color: white; animation-duration: 10s;"
-        class="navbar-brand animate__animated animate__headShake animate__infinite" href="Page1.html">Provi<span
+        class="navbar-brand animate_animated animateheadShake animate_infinite" href="index.html">Provi<span
           style="color: white;">Tex</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,26 +91,32 @@
       </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0 pe-xl-5">
-        <li class="nav-item">
-          <a style="color: white;" class="nav-link" aria-current="page" href="#">Trending</a>
-        </li>
         <li class="nav-item dropdown">
           <a style="color: white;" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Genres
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Fiction</a></li>
-            <li><a class="dropdown-item" href="#">Horor</a></li>
-            <li><a class="dropdown-item" href="#">Fantasy</a></li>
-            <li><a class="dropdown-item" href="#">Romance</a></li>
+            <li><a class="dropdown-item" href="Fiction_Page.html">Fiction</a></li>
+            <li><a class="dropdown-item" href="Horor_Page.html">Horor</a></li>
+            <li><a class="dropdown-item" href="Fantasy_Page.html">Fantasy</a></li>
+            <li><a class="dropdown-item" href="Romance_Page.html">Romance</a></li>
           </ul>
         </li>
         <li class="nav-item">
           <a style="color: white;" class="nav-link" href="Membership.html">Membership</a>
         </li>
+        <li class="nav-item">
+          <a style="color: white;" class="nav-link" aria-current="page" href="Login.html">Login</a>
+        </li>
       </ul>
-      <a href="login.html"><button type="button" class="btn btn-light"><i class="fa-solid fa-right-to-bracket"></i>
-        Login</button></a>
+  <!--Search Navbar-->  
+    <form class="example" action="/action_page.php" style="width: 60%;">
+      <input type="text" placeholder=" Search..." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
+<!--Search Navbar-->
+
     </div>
   </div>
 </nav>
@@ -118,7 +134,7 @@
             <div class="row">
                 <div class="col-12">
                     <br><br><br><br>
-                    <h1 style="font-size: 50px;">Provitex Membership</h1>
+                    <h1 class="title Vogue" style="font-size: 50px;">Provitex Membership</h1>
                     <br>
                     <p>“A reader lives a thousand lives before he dies . . . The man who never reads lives only one.” -George R.R. Martin</p>
                     <p>So let's try your membership and lives a thousand lives</p>
@@ -242,13 +258,13 @@
           <h5 Services class="text-uppercase mb-4 font-weight-bold" style="color:#71b7e6">
             Services </h5>
           <p class="Judul2">
-            <a href="Page1.html" style="text-decoration: none; color: #fff">Home</a>
+            <a href="index.html" style="text-decoration: none; color: #fff">Home</a>
           </p>
           <p class="Judul2">
-            <a href="trendingbook.html" style="text-decoration: none; color:#fff">Trending Movies</a>
+            <a href="Membership.html" style="text-decoration: none; color:#fff">Membership</a>
           </p>
           <p class="Judul2">
-            <a href="genres.html" style="text-decoration: none; color:#fff">Genres</a>
+            <a href="Login.html" style="text-decoration: none; color:#fff">Login</a>
           </p>
         </div>
 
@@ -257,16 +273,16 @@
           <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #71b7e6">Genres</h5>
           <div class="description2">
             <p class="Judul2">
-              <a href="horror.html" style="text-decoration: none; color:#ffff">Horror</a>
+              <a href="Horor_Page.html" style="text-decoration: none; color:#ffff">Horror</a>
             </p>
             <p class="Judul2">
-              <a href="fantasy.html" style="text-decoration: none; color:#fff">Fantasy</a>
+              <a href="Fantasy_Page.html" style="text-decoration: none; color:#fff">Fantasy</a>
             </p>
             <p class="Judul2">
-              <a href="romance.html" style="text-decoration: none; color:#ffff">Romance</a>
+              <a href="Romance_Page.html" style="text-decoration: none; color:#ffff">Romance</a>
             </p>
             <p class="Judul2">
-              <a href="Fiction.html" style="text-decoration: none; color:#ffff">Fiction</a>
+              <a href="Fiction_Page.html" style="text-decoration: none; color:#ffff">Fiction</a>
             </p>
           </div>
         </div>
